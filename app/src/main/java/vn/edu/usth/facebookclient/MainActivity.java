@@ -1,14 +1,33 @@
 package vn.edu.usth.facebookclient;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
+
+import java.util.Arrays;
+
+
 public class MainActivity extends AppCompatActivity {
+    private CallbackManager callbackManager;
+    private LoginButton loginButton;
+    private static final String EMAIL = "email";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +37,55 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
             return insets;
         });
+
+        loginButton = findViewById(R.id.login_button);
+        callbackManager = CallbackManager.Factory.create();
+
+        loginButton.setPermissions(Arrays.asList("email", "user_gender", "user_age_range"));
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Log.d("debug", "Login successful");
+            }
+
+            @Override
+            public void onCancel() {
+                Log.d("debug", "Login canceled");
+            }
+
+            @Override
+            public void onError(@NonNull FacebookException e) {
+                Log.d("debug", "Login error");
+            }
+        });
+    }
+
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public void onPause() {
+        super.onPause();
+    }
+
+    public void onResume() {
+        super.onResume();
+    }
+
+    public void onStart() {
+        super.onStart();
+    }
+
+    public void onStop() {
+        super.onStop();
+    }
+
+    public void onDestroy() {
+        super.onDestroy();
     }
 }
