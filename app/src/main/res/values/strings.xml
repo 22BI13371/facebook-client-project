@@ -3,4 +3,10 @@
     <string name="facebook_app_id">1285479815773488</string>
     <string name="fb_login_protocol_scheme">fb1234</string>
     <string name="facebook_client_token">fab0c0845e97bf46fbf4189b75ae2f35</string>
+
+    <string name="homepage">homepage</string>
+    <string name="friend_list">friend_list</string>
+    <string name="video">video</string>
+    <string name="notification">notification</string>
+    <string name="profile">profile</string>
 </resources>

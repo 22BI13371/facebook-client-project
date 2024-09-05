@@ -12,9 +12,51 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/fragment_change"
+            android:id="@+id/navigation_bar"
             android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:orientation="horizontal"/>
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/homepage"
+                android:src="@drawable/trang_chu" />
+
+            <ImageButton
+                android:id="@+id/friend_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/friend_list"
+                android:src="@drawable/ket_ban" />
+
+            <ImageButton
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/video"
+                android:src="@drawable/video" />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/notification"
+                android:src="@drawable/notification" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/trang_ca_nhan" />
+
+        </LinearLayout>
     </LinearLayout>
 </FrameLayout>
