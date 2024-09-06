@@ -11,51 +11,232 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <LinearLayout
-            android:id="@+id/navigation_bar"
+            android:id="@+id/stories"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/homepage"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/homepage"
-                android:src="@drawable/trang_chu" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="6dp">
 
-            <ImageButton
-                android:id="@+id/friend_list"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/friend_list"
-                android:src="@drawable/ket_ban" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:text="Stories"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/video"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/video"
-                android:src="@drawable/video" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp"
+                    android:text="See Archive >"
+                    android:textColor="#4285F4" />
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/notification"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/notification"
-                android:src="@drawable/notification" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/profile"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:contentDescription="@string/profile"
-                android:src="@drawable/trang_ca_nhan" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!-- Add Your Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/placeholder_image" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/circle_background"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_add" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Add Your Story"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Anita Michaels Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anita_michaels" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Anita Michaels"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Anita Michaels Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anita_michaels" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Anita Michaels"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Anita Michaels Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anita_michaels" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Anita Michaels"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Anita Michaels Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anita_michaels" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Anita Michaels"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/homepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/homepage"
+                    android:src="@drawable/trang_chu" />
+
+                <ImageButton
+                    android:id="@+id/friend_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/friend_list"
+                    android:src="@drawable/ket_ban" />
+
+                <ImageButton
+                    android:id="@+id/video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/video"
+                    android:src="@drawable/video" />
+
+                <ImageButton
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/notification"
+                    android:src="@drawable/notification" />
+
+                <ImageButton
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/trang_ca_nhan" />
+
+            </LinearLayout>
+        </LinearLayout>
+
 
         </LinearLayout>
     </LinearLayout>
