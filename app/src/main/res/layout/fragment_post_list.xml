@@ -11,6 +11,38 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/camera"
+                android:padding="4dp"
+                android:src="@drawable/ic_camera" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/search"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/messenger"
+                android:padding="4dp"
+                android:src="@drawable/ic_messenger" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/stories"

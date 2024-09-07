@@ -9,4 +9,7 @@
     <string name="video">video</string>
     <string name="notification">notification</string>
     <string name="profile">profile</string>
+    <string name="search">Search</string>
+    <string name="camera">Camera</string>
+    <string name="messenger">Messenger</string>
 </resources>
