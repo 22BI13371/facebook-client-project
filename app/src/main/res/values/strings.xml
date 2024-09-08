@@ -12,4 +12,14 @@
     <string name="search">Search</string>
     <string name="camera">Camera</string>
     <string name="messenger">Messenger</string>
+    <string name="Icon1">Icon</string>
+    <string name ="like_button_text">like</string>
+    <string name ="comment_button_text">comment</string>
+    <string name ="Emily"><b>Emily</b> updated her cover photo </string>
+    <string name ="time_counter_text">3 mins ago</string>
+    <string name ="like_number">1B</string>
+    <string name ="comment_number">3.6B Comments</string>
+    <string name = "Ronaldo"><b>SIUUU Ronaldo</b> had a Photoshot session at <b>AL Nassr</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
