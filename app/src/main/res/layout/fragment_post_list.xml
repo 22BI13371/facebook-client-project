@@ -33,7 +33,7 @@
                 android:hint="@string/search"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
-                android:padding="8dp" />
+                android:padding="8dp"/>
 
             <ImageView
                 android:layout_width="60dp"
