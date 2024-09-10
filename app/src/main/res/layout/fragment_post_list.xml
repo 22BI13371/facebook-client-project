@@ -108,7 +108,7 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_gravity="bottom|end"
-                                android:background="@drawable/circle_background"
+                                android:background="@drawable/avatar_circle"
                                 android:padding="4dp"
                                 android:src="@drawable/ic_add" />
                         </FrameLayout>
