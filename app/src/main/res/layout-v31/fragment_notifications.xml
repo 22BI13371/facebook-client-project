@@ -12,25 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical"
         android:padding = "16dp"
         tools:ignore="UseCompoundDrawables">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Notifications"
-                android:textSize="32sp"
-                android:layout_marginEnd="150dp"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Notifications"
+            android:textSize="32sp"
+            android:gravity="start"/>
         <ImageView
-            android:layout_width="24dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_gravity="end"
             android:contentDescription="@string/Icon1"
             android:src="@drawable/_380510_200"
+            android:maxWidth="24dp"
+            android:scaleType="fitEnd"
             app:tint="@color/grey" />
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,13 +70,10 @@
             android:gravity="center_vertical"
             android:padding = "16dp"
             tools:ignore="UselessParent">
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="16dp">
+
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="16dp">
                     <ImageView
                             android:layout_width="60dp"
@@ -92,7 +87,7 @@
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:layout_gravity="bottom|end"
+                        android:layout_gravity="center_vertical|end"
                         android:background="@drawable/rounded_edittext"
                         android:backgroundTint="@color/com_facebook_button_background_color"
                         android:contentDescription="@string/Icon1"
@@ -102,13 +97,13 @@
 
                 </FrameLayout>
 
-            </FrameLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginEnd="60dp">
+                android:layout_marginEnd="48dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -134,7 +129,7 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/Confirm"
                         android:textColor="@color/white"
                         android:layout_weight="1"
@@ -144,7 +139,7 @@
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/Delete"
                         android:layout_weight="1"
                         android:gravity="center"
@@ -155,7 +150,7 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="32dp"
+                android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/Icon1"
                 android:src = "@drawable/dot"
@@ -183,36 +178,27 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp">
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/smile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circular_image"
+                android:contentDescription="@string/Icon1"
+                android:clipToOutline="true"/>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="bottom|end"
-                    android:background="@drawable/rounded_edittext"
-                    android:backgroundTint="@color/pink"
-                    android:contentDescription="@string/Icon1"
-                    android:padding="4dp"
-                    android:src="@drawable/happy_birthday_cake_icon_8"
-                    app:tint="@color/white"/>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginEnd="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/Icon1"
+                android:layout_marginBottom="10dp"
+                android:padding="4dp"
+                android:src="@drawable/happy_birthday_cake_icon_8"
+                app:tint="@color/white" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/smile"
-                        android:scaleType="centerCrop"
-                        android:contentDescription="@string/Icon1"/>
-
-                </androidx.cardview.widget.CardView>
-
-            </FrameLayout>
         </FrameLayout>
 
         <LinearLayout
@@ -220,7 +206,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginEnd="60dp">
+            android:layout_marginEnd="48dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -235,7 +221,7 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="32dp"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:contentDescription="@string/Icon1"
             android:src="@drawable/dot"
@@ -249,49 +235,39 @@
         android:gravity="center_vertical"
         android:padding = "16dp"
         tools:ignore="UselessParent">
+
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp">
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/mbappe_real_betis_1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circular_image"
+                android:contentDescription="@string/Icon1"
+                android:clipToOutline="true"/>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="bottom|end"
-                    android:background="@drawable/rounded_edittext"
-                    android:backgroundTint="@color/pink"
-                    android:contentDescription="@string/Icon1"
-                    android:padding="4dp"
-                    android:src="@drawable/happy_birthday_cake_icon_8"
-                    app:tint="@color/white"/>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_gravity=""
-                    android:layout_marginEnd="16dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/pink"
+                android:contentDescription="@string/Icon1"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:src="@drawable/happy_birthday_cake_icon_8"
+                app:tint="@color/white" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/mbappe_real_betis_1"
-                        android:scaleType="centerCrop"
-                        android:contentDescription="@string/Icon1"/>
-
-                </androidx.cardview.widget.CardView>
-
-            </FrameLayout>
         </FrameLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginEnd="60dp">
+            android:layout_marginEnd="48dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -306,7 +282,7 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="32dp"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:contentDescription="@string/Icon1"
             android:src="@drawable/dot"
