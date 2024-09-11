@@ -33,6 +33,7 @@
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
                 android:hint="@string/search"
+                android:padding="8dp"/>
                 android:padding="8dp" />
 
             <ImageView
@@ -109,7 +110,7 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_gravity="bottom|end"
-                                android:background="@drawable/placeholder_image"
+                                android:background="@drawable/avatar_circle"
                                 android:padding="4dp"
                                 android:src="@drawable/placeholder_image" />
                         </FrameLayout>
