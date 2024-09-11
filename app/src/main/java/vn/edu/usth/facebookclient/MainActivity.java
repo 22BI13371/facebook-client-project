@@ -2,24 +2,15 @@ package vn.edu.usth.facebookclient;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-
-import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,26 +32,32 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        loginButton = findViewById(R.id.login_button);
-        callbackManager = CallbackManager.Factory.create();
+        PostList postList = new PostList();
 
-        loginButton.setPermissions(Arrays.asList("email", "user_gender", "user_age_range"));
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                Log.d("debug", "Login successful");
-            }
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.main, postList)
+                .commit();
 
-            @Override
-            public void onCancel() {
-                Log.d("debug", "Login canceled");
-            }
-
-            @Override
-            public void onError(@NonNull FacebookException e) {
-                Log.d("debug", "Login error");
-            }
-        });
+//        loginButton = findViewById(R.id.login_button);
+//        callbackManager = CallbackManager.Factory.create();
+//
+//        loginButton.setPermissions(Arrays.asList("email", "user_gender", "user_age_range"));
+//        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+//            @Override
+//            public void onSuccess(LoginResult loginResult) {
+//                Log.d("debug", "Login successful");
+//            }
+//
+//            @Override
+//            public void onCancel() {
+//                Log.d("debug", "Login canceled");
+//            }
+//
+//            @Override
+//            public void onError(@NonNull FacebookException e) {
+//                Log.d("debug", "Login error");
+//            }
+//        });
     }
 
 
