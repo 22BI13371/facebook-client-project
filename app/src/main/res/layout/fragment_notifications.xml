@@ -22,13 +22,14 @@
                 android:text="@string/Notifications"
                 android:textSize="32sp"
                 android:layout_marginEnd="150dp"/>
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/Icon1"
-                android:src = "@drawable/_380510_200"
-                android:layout_gravity="end"
-                app:tint="#666666"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:contentDescription="@string/Icon1"
+            android:src="@drawable/_380510_200"
+            app:tint="#666666" />
 
     </LinearLayout>
     <LinearLayout
@@ -71,34 +72,41 @@
             android:gravity="center_vertical"
             android:padding = "16dp"
             tools:ignore="UselessParent">
-
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_gravity="top"
-                    android:layout_marginEnd="16dp">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/girl"
-                        android:scaleType="centerCrop"
-                        android:contentDescription="@string/Icon1"/>
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/com_facebook_button_background_color"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/profile"
+                        app:tint="@color/white"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_gravity=""
+                        android:layout_marginEnd="16dp">
 
-                </androidx.cardview.widget.CardView>
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="bottom|end"
-                    android:background="@drawable/circle_background"
-                    android:padding="4dp"
-                    android:src="@drawable/ic_add" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/girl"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/Icon1"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
             </FrameLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -176,6 +184,17 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/com_facebook_button_background_color"
+                android:contentDescription="@string/Icon1"
+                android:padding="4dp"
+                android:src="@drawable/profile"
+                app:tint="@color/white"/>
             <androidx.cardview.widget.CardView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -191,13 +210,7 @@
                     android:contentDescription="@string/Icon1"/>
 
             </androidx.cardview.widget.CardView>
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="bottom|end"
-                    android:background="@drawable/circle_background"
-                    android:padding="4dp"
-                    android:src="@drawable/ic_add" />
+
         </FrameLayout>
 
         <LinearLayout
@@ -255,9 +268,10 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="bottom|end"
-                android:background="@drawable/circle_background"
+                android:background="@drawable/placeholder_image"
                 android:padding="4dp"
-                android:src="@drawable/ic_add" />
+                android:src="@drawable/placeholder_image"
+                android:contentDescription="@string/Icon1"/>
         </FrameLayout>
 
         <LinearLayout
@@ -291,7 +305,6 @@
         android:layout_height="0dp"
         android:layout_gravity="bottom"
         android:layout_weight="1">
-
 
         <LinearLayout
             android:id="@+id/navigation_bar"
