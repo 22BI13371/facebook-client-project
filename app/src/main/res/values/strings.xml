@@ -3,7 +3,6 @@
     <string name="facebook_app_id">1285479815773488</string>
     <string name="fb_login_protocol_scheme">fb1234</string>
     <string name="facebook_client_token">fab0c0845e97bf46fbf4189b75ae2f35</string>
-
     <string name="homepage">homepage</string>
     <string name="friend_list">friend_list</string>
     <string name="video">video</string>
@@ -31,12 +30,13 @@
     <string name="like_number">1B</string>
     <string name="comment_number">3.6B Comments</string>
     <string name="Ronaldo"><b>SIUUU Ronaldo</b> had a Photoshot session at <b>AL Nassr</b></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="add_image">Add Image</string>
-    <string name="cancel_button">Cancel Button</string>
-    <string name="post">Post</string>
-    <string name="create_post">Create post</string>
-    <string name="enter_text">enter text</string>
-    <string name="tag_people">Tag People</string>
+    <string name="Notifications"><b>Notifications</b></string>
+    <string name="New"><b>New</b></string>
+    <string name = "See_all">See all</string>
+    <string name = "Emily_send_friend_request"><b>Emily </b>sent you a friend request.</string>
+    <string name = "three_days_ago">3 days ago</string>
+    <string name = "fifteen_mutual_friends">15 mutual friends</string>
+    <string name = "Confirm">Confirm</string>
+    <string name="Delete">Delete</string>
+    <string name= "Earlier"><b>Earlier</b></string>
 </resources>
