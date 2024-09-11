@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Post_list postList = new Post_list();
+        PostList postList = new PostList();
 
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.main, postList)

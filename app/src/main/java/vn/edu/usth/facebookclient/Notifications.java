@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Post_list#newInstance} factory method to
+ * Use the {@link Notifications#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Post_list extends Fragment {
+public class Notifications extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class Post_list extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Post_list() {
+    public Notifications() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class Post_list extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Post_list.
+     * @return A new instance of fragment Notifications.
      */
     // TODO: Rename and change types and number of parameters
-    public static Post_list newInstance(String param1, String param2) {
-        Post_list fragment = new Post_list();
+    public static Notifications newInstance(String param1, String param2) {
+        Notifications fragment = new Notifications();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class Post_list extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_post_list, container, false);
+        return inflater.inflate(R.layout.fragment_notifications, container, false);
     }
 }

@@ -3,7 +3,6 @@
     <string name="facebook_app_id">1285479815773488</string>
     <string name="fb_login_protocol_scheme">fb1234</string>
     <string name="facebook_client_token">fab0c0845e97bf46fbf4189b75ae2f35</string>
-
     <string name="homepage">homepage</string>
     <string name="friend_list">friend_list</string>
     <string name="video">video</string>
@@ -12,14 +11,32 @@
     <string name="search">Search</string>
     <string name="camera">Camera</string>
     <string name="messenger">Messenger</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="user_name">ICT GUY</string>
+    <string name="add_to_story">+ Add to story</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="details">Details</string>
+    <string name="others">...</string>
+    <string name="details_study">Study at USTH</string>
+    <string name="details_from">From Hanoi</string>
+    <string name="details_live">Lives in Hanoi</string>
+    <string name="details_relationship">Single</string>
+    <string name="edit_public_details">Edit public details</string>
     <string name="Icon1">Icon</string>
-    <string name ="like_button_text">like</string>
-    <string name ="comment_button_text">comment</string>
-    <string name ="Emily"><b>Emily</b> updated her cover photo </string>
-    <string name ="time_counter_text">3 mins ago</string>
-    <string name ="like_number">1B</string>
-    <string name ="comment_number">3.6B Comments</string>
-    <string name = "Ronaldo"><b>SIUUU Ronaldo</b> had a Photoshot session at <b>AL Nassr</b></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like_button_text">like</string>
+    <string name="comment_button_text">comment</string>
+    <string name="Emily"><b>Emily</b> updated her cover photo </string>
+    <string name="time_counter_text">3 mins ago</string>
+    <string name="like_number">1B</string>
+    <string name="comment_number">3.6B Comments</string>
+    <string name="Ronaldo"><b>SIUUU Ronaldo</b> had a Photoshot session at <b>AL Nassr</b></string>
+    <string name="Notifications"><b>Notifications</b></string>
+    <string name="New"><b>New</b></string>
+    <string name = "See_all">See all</string>
+    <string name = "Emily_send_friend_request"><b>Emily </b>sent you a friend request.</string>
+    <string name = "three_days_ago">3 days ago</string>
+    <string name = "fifteen_mutual_friends">15 mutual friends</string>
+    <string name = "Confirm">Confirm</string>
+    <string name="Delete">Delete</string>
+    <string name= "Earlier"><b>Earlier</b></string>
 </resources>

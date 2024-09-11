@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Post_list">
+    tools:context=".PostList">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,6 +34,7 @@
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
                 android:hint="@string/search"
+                android:padding="8dp"/>
                 android:padding="8dp" />
 
             <ImageView
@@ -111,7 +112,7 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_gravity="bottom|end"
-                                android:background="@drawable/placeholder_image"
+                                android:background="@drawable/avatar_circle"
                                 android:padding="4dp"
                                 android:src="@drawable/placeholder_image" />
                         </FrameLayout>
@@ -1469,6 +1470,7 @@
                 android:layout_weight="1"
                 android:contentDescription="@string/profile"
                 android:src="@drawable/trang_ca_nhan" />
+
 
         </LinearLayout>
 
