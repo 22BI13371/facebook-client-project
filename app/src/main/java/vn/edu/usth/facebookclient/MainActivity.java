@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.facebook.CallbackManager;
 import com.facebook.login.widget.LoginButton;
@@ -15,8 +16,8 @@ import com.facebook.login.widget.LoginButton;
 
 public class MainActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
-    private LoginButton loginButton;
-    private static final String EMAIL = "email";
+    //private LoginButton loginButton;
+    //private static final String EMAIL = "email";
 
 
 
@@ -25,18 +26,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//
+//            return insets;
+//        });
 
-            return insets;
-        });
+//        PostList postList = new PostList();
+//
+//        getSupportFragmentManager().beginTransaction()
+//                .add(R.id.main, postList)
+//                .commit();
+        HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(this);
 
-        PostList postList = new PostList();
+        ViewPager2 viewPager = findViewById(R.id.pager);
+        viewPager.setOffscreenPageLimit(3);
+        viewPager.setAdapter(adapter);
 
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.main, postList)
-                .commit();
+
 
 //        loginButton = findViewById(R.id.login_button);
 //        callbackManager = CallbackManager.Factory.create();
@@ -59,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
+
 
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

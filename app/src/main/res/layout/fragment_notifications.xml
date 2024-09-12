@@ -16,19 +16,20 @@
         android:padding = "16dp"
         tools:ignore="UseCompoundDrawables">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Notifications"
-                android:textSize="32sp"
-                android:layout_marginEnd="150dp"/>
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/Icon1"
-                android:src = "@drawable/_380510_200"
-                android:layout_gravity="end"
-                app:tint="#666666"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Notifications"
+            android:textSize="32sp"
+            android:layout_marginEnd="150dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:contentDescription="@string/Icon1"
+            android:src="@drawable/_380510_200"
+            app:tint="@color/grey" />
 
     </LinearLayout>
     <LinearLayout
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical">
-        
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -52,12 +53,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/See_all"
-                android:textColor="@color/com_facebook_blue"
+                android:textColor="@color/dark_blue"
                 android:paddingEnd="16dp"
                 android:layout_alignParentEnd="true"
                 tools:ignore="RelativeOverlap,RtlSymmetry" />
         </RelativeLayout>
-        
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,50 +72,54 @@
             android:gravity="center_vertical"
             android:padding = "16dp"
             tools:ignore="UselessParent">
-
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_gravity="top"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp">
-
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/girl"
                         android:scaleType="centerCrop"
-                        android:contentDescription="@string/Icon1"/>
+                        android:background="@drawable/circular_image"
+                        android:contentDescription="@string/Icon1"
+                        android:clipToOutline="true"/>
 
-                </androidx.cardview.widget.CardView>
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="bottom|end"
-                    android:background="@drawable/placeholder_image"
-                    android:padding="4dp"
-                    android:src="@drawable/placeholder_image" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/com_facebook_button_background_color"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/profile"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
             </FrameLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginEnd="80dp">
+                android:layout_marginEnd="60dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:maxWidth="224dp"
                     android:text="@string/Emily_send_friend_request"
                     android:textSize="16sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/three_days_ago"
-                    android:textColor="@color/com_facebook_blue"/>
+                    android:textColor="@color/dark_blue"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -131,10 +136,11 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="@string/Confirm"
+                        android:textColor="@color/white"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:background="@drawable/rounded_edittext"
-                        android:backgroundTint="@color/com_facebook_button_background_color" />
+                        android:backgroundTint="@color/dark_blue" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -149,11 +155,11 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="32dp"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/Icon1"
-                android:src = "@drawable/_380510_200"
-                app:tint="#666666"/>
+                android:src = "@drawable/dot"
+                app:tint="@color/com_facebook_blue"/>
 
         </LinearLayout>
 
@@ -175,29 +181,38 @@
         tools:ignore="UselessParent">
         <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-            <androidx.cardview.widget.CardView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="top"
-                android:layout_marginEnd="16dp">
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/girl"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/Icon1"/>
-
-            </androidx.cardview.widget.CardView>
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="bottom|end"
-                    android:background="@drawable/placeholder_image"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/pink"
+                    android:contentDescription="@string/Icon1"
                     android:padding="4dp"
-                    android:src="@drawable/placeholder_image" />
+                    android:src="@drawable/happy_birthday_cake_icon_8"
+                    app:tint="@color/white"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/smile"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/Icon1"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
         </FrameLayout>
 
         <LinearLayout
@@ -205,25 +220,26 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginEnd="80dp">
+            android:layout_marginEnd="60dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Emily_send_friend_request"
+                android:text="@string/ronaldo_bday"
+                android:maxWidth="224dp"
                 android:textSize="16sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/three_days_ago"
-                android:textColor="@color/com_facebook_blue"/>
+                android:text="@string/four_hours_ago"
+                android:textColor="@color/dark_blue"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="24dp"
+            android:layout_width="32dp"
             android:layout_height="match_parent"
             android:contentDescription="@string/Icon1"
-            android:src = "@drawable/_380510_200"
-            app:tint="#666666"/>
+            android:src="@drawable/dot"
+            app:tint="@color/com_facebook_button_background_color" />
     </LinearLayout>
 
     <LinearLayout
@@ -235,29 +251,39 @@
         tools:ignore="UselessParent">
         <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-            <androidx.cardview.widget.CardView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                app:cardCornerRadius="20dp"
-                android:layout_gravity="top"
-                android:layout_marginEnd="16dp">
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/girl"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/Icon1"/>
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/pink"
+                    android:contentDescription="@string/Icon1"
+                    android:padding="4dp"
+                    android:src="@drawable/happy_birthday_cake_icon_8"
+                    app:tint="@color/white"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_gravity=""
+                    android:layout_marginEnd="16dp">
 
-            </androidx.cardview.widget.CardView>
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="bottom|end"
-                android:background="@drawable/placeholder_image"
-                android:padding="4dp"
-                android:src="@drawable/placeholder_image" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbappe_real_betis_1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/Icon1"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
         </FrameLayout>
 
         <LinearLayout
@@ -265,33 +291,35 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginEnd="80dp">
+            android:layout_marginEnd="60dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Emily_send_friend_request"
+                android:text="@string/Birthdays"
+                android:maxWidth="224dp"
                 android:textSize="16sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/three_days_ago"
-                android:textColor="@color/com_facebook_blue"/>
+                android:text="@string/A_day_ago"
+                android:textColor="@color/grey"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="24dp"
+            android:layout_width="32dp"
             android:layout_height="match_parent"
             android:contentDescription="@string/Icon1"
-            android:src = "@drawable/_380510_200"
-            app:tint="#666666"/>
+            android:src="@drawable/dot"
+            app:tint="@color/com_facebook_button_background_color" />
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
         android:layout_weight="1">
-
 
         <LinearLayout
             android:id="@+id/navigation_bar"

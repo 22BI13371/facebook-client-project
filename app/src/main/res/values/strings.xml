@@ -16,7 +16,7 @@
     <string name="add_to_story">+ Add to story</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="details">Details</string>
-    <string name="others">...</string>
+    <string name="others">…</string>
     <string name="details_study">Study at USTH</string>
     <string name="details_from">From Hanoi</string>
     <string name="details_live">Lives in Hanoi</string>
@@ -39,4 +39,24 @@
     <string name = "Confirm">Confirm</string>
     <string name="Delete">Delete</string>
     <string name= "Earlier"><b>Earlier</b></string>
+    <string name = "ronaldo_bday">Its <b>Cristiano Ronaldo</b> birthday today. Help him celebrate!</string>
+    <string name = "Anthony"><b>Anthony dos Santos</b> and 2 other friends had birthdays yesterday.</string>
+    <string name = "Birthdays"><b>K.Mbappe</b> and <b>URgoat.cr7</b> had birthdays on November 24.</string>
+    <string name = "URgoat.cr7"><b>URgoat.cr7</b> posted in <b>AL Nassr, Saudi Arabia</b> on Tuesday: "Cristiano Ronaldo…</string>
+    <string name="CR7">A Page you like,\n<b>Scoring900goals.com</b>, changed its name to <b>GoCristiano</b></string>
+    <string name = "Ballon_dor"><b>Ballon Dor</b> sent you a friend request.</string>
+    <string name = "Anthony_100M"><b>Anthony 100M</b> sent you a friend request</string>
+    <string name = "Ten_Hag"><b>Erik Ten Hag</b> sent you a friend request</string>
+    <string name = "four_hours_ago">4 hours ago</string>
+    <string name = "A_day_ago">a day ago</string>
+    <string name = "two_days_ago">2 days ago</string>
+    <string name="four_days_ago">4 days ago</string>
+    <string name = "two_weeks_ago">2 weeks ago</string>
+    <string name = "cancel_button">cancel button</string>
+    <string name = "create_post">create post</string>
+    <string name = "post">post</string>
+    <string name="enter_text">Enter text</string>
+    <string name = "add_image">Add image</string>
+    <string name = "tag_people">Tag people</string>
+    
 </resources>

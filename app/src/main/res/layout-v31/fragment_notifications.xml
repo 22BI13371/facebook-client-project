@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifications">
+
+    <!-- Notification header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/Notifications"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Icon1"
+            android:maxWidth="24dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/_380510_200"
+            app:tint="@color/grey" />
+    </LinearLayout>
+
+
+    <!-- New and See all -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="16dp"
+                android:text="@string/New"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="16dp"
+                android:text="@string/See_all"
+                android:textColor="@color/dark_blue"
+                tools:ignore="RelativeOverlap,RtlSymmetry" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Emily notifications -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Emily's Avatar -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circular_image"
+                android:clipToOutline="true"
+                android:contentDescription="@string/Icon1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/girl" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/com_facebook_button_background_color"
+                android:contentDescription="@string/Icon1"
+                android:src="@drawable/profile"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <!-- Emily's text notification-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="224dp"
+                android:text="@string/Emily_send_friend_request"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_days_ago"
+                android:textColor="@color/dark_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/fifteen_mutual_friends" />
+
+            <!-- Confirm and delete button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/dark_blue"
+                    android:gravity="center"
+                    android:text="@string/Confirm"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center"
+                    android:text="@string/Delete" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Blue notification dot -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Icon1"
+            android:src="@drawable/dot"
+            app:tint="@color/com_facebook_blue" />
+    </LinearLayout>
+
+    <!-- Earlier text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:text="@string/Earlier"
+        tools:ignore="RtlSymmetry" />
+
+    <!-- Scroll view for notification -->
+    <ScrollView
+        android:id="@+id/noti_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+        <!-- LinearLayout vertical to keep the notifications in order -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cristiano Ronaldo Notifications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Cristiano Ronaldo's avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/smile" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/pink"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/happy_birthday_cake_icon_8"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <!-- Cristiano Ronaldo's notification text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/ronaldo_bday"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/four_hours_ago"
+                        android:textColor="@color/dark_blue" />
+                </LinearLayout>
+
+                <!-- Blue Notifications dot-->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- Mbappe Notifications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Mbappe's avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mbappe_real_betis_1" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/pink"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/happy_birthday_cake_icon_8"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <!-- Mbappe's text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/Birthdays"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/A_day_ago"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+
+                <!-- Blue Notifications dot -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- Anthony dos Santos Notifications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Anthony dos Santos Avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/antony___2024" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/pink"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/happy_birthday_cake_icon_8"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <!-- Anthony dos Santos Notification text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/Anthony"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/two_days_ago"
+                        android:textColor="@color/dark_blue" />
+                </LinearLayout>
+
+                <!-- Blue Notifications dot -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- URgoat.cr7 Notification -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Urgoat.cr7 avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/qabd_mu_2022_do_4" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/com_facebook_button_background_color"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/group"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <!-- Urgoat.cr7 text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/URgoat.cr7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/four_days_ago"
+                        android:textColor="@color/dark_blue" />
+                </LinearLayout>
+
+                <!-- Blue Notification dot -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- GoCristiano Notification -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- GoCristiano Avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/a7" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginBottom="-4dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/bright_orange"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/location"
+                        app:tint="@color/white" />
+                </FrameLayout>
+
+                <!-- GoCristiano Notification text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/CR7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/A_day_ago"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+                <!-- Blue Notifications dot -->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- Anthony 100M Notification -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Anthony 100M Avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/antony_to_balloon_dior_2024_here_we_go_v0_1mke82tdkxoc1" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/com_facebook_button_background_color"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/profile"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <!-- Anthony 100M text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/Anthony_100M"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_counter_text"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+
+                <!-- Blue Notifications dot-->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color" />
+            </LinearLayout>
+
+            <!-- Erik Ten Hag Notifications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                tools:ignore="UselessParent">
+
+                <!-- Erik Ten Hag Avatar -->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circular_image"
+                        android:clipToOutline="true"
+                        android:contentDescription="@string/Icon1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tenhag" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/com_facebook_button_background_color"
+                        android:contentDescription="@string/Icon1"
+                        android:padding="4dp"
+                        android:src="@drawable/profile"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <!-- Erik Ten Hag text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="224dp"
+                        android:text="@string/Ten_Hag"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/A_day_ago"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+
+                <!-- Blue Notifications dot-->
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/Icon1"
+                    android:src="@drawable/dot"
+                    app:tint="@color/com_facebook_button_background_color"
+                    tools:ignore="TooManyViews" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Icon bottom bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        tools:ignore="TooManyViews">
+
+        <LinearLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/homepage"
+                android:src="@drawable/trang_chu" />
+
+            <ImageButton
+                android:id="@+id/friend_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/friend_list"
+                android:src="@drawable/ket_ban" />
+
+            <ImageButton
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/video"
+                android:src="@drawable/video" />
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/notification"
+                android:src="@drawable/notification" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/trang_ca_nhan" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
