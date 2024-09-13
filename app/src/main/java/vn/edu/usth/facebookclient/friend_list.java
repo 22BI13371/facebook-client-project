@@ -1,6 +1,5 @@
 package vn.edu.usth.facebookclient;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import vn.edu.usth.facebookclient.adapter.FriendRequestAdapter;
-import vn.edu.usth.facebookclient.adapter.PeopleYouMayKnowAdapter;
 
 public class friend_list extends Fragment {
 

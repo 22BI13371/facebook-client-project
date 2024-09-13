@@ -1,4 +1,4 @@
-package vn.edu.usth.facebookclient.adapter;
+package vn.edu.usth.facebookclient;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +8,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
-import vn.edu.usth.facebookclient.R;
 
 public class PeopleYouMayKnowAdapter extends RecyclerView.Adapter<PeopleYouMayKnowAdapter.ViewHolder> {
 
