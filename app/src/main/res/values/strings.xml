@@ -58,5 +58,6 @@
     <string name="enter_text">Enter text</string>
     <string name = "add_image">Add image</string>
     <string name = "tag_people">Tag people</string>
+    <string name = "TAB">A Tab Layout</string>
     
 </resources>
