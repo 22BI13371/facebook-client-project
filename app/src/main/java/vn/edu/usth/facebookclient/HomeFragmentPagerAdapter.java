@@ -23,14 +23,18 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        switch (position){
-            case 0: return new PostList();
+        switch (position) {
+            default:
+                return new PostList();
             case 1:
+                return new friend_list();
             case 2:
-            case 3:
-                return new MakePostFragment();
+                return new Notifications();
         }
-        return new Notifications();
+    }
+    public CharSequence getPageTitle(int page) {
+// returns a tab title corresponding to the specified page
+        return titles[page];
     }
 //    public CharSequence getPageTitle(int page) {
 //// returns a tab title corresponding to the specified page
