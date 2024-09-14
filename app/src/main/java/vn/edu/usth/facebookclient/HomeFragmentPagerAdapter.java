@@ -16,7 +16,7 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3; // number of pages for a ViewPager
+        return 5; // number of pages for a ViewPager
     }
 
     @NonNull
@@ -28,7 +28,11 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
             case 1:
                 return new friend_list();
             case 2:
+                return new PostList();
+            case 3:
                 return new Notifications();
+            case 4:
+                return new MakePostFragment();
         }
     }
     public CharSequence getPageTitle(int page) {
