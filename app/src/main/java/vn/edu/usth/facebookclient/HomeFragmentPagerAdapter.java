@@ -8,6 +8,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 
 public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
+    private String[] titles = new String[] { "Posts", "Friends", "Notifications", "Profile" };  // Add your tab titles here
     public HomeFragmentPagerAdapter(AppCompatActivity activity) {
         super(activity);
     }
@@ -23,17 +24,16 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        switch (position) {
-            default:
-                return new PostList();
-            case 1:
-                return new friend_list();
-            case 2:
-                return new Notifications();
+        switch (position){
+            case 0: return new PostList();
+            case 1: return new friend_list();
+            case 2: return new MakePostFragment();
+            case 3: return new Notifications();
         }
+        return new Notifications();
     }
     public CharSequence getPageTitle(int page) {
-// returns a tab title corresponding to the specified page
+        // returns a tab title corresponding to the specified page
         return titles[page];
     }
 //    public CharSequence getPageTitle(int page) {

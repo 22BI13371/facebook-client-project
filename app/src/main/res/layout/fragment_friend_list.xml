@@ -8,7 +8,6 @@
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/navigation_bar"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:padding="16dp">
@@ -71,52 +70,4 @@
     </LinearLayout>
 
     <!-- Navigation Bar -->
-        <LinearLayout
-        android:id="@+id/navigation_bar"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:background="#FFFFFF">
-
-            <ImageButton
-            android:id="@+id/homepage"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/homepage"
-            android:src="@drawable/trang_chu" />
-
-            <ImageButton
-            android:id="@+id/friend_list"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/friend_list"
-            android:src="@drawable/ket_ban" />
-
-            <ImageButton
-            android:id="@+id/video"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/video"
-            android:src="@drawable/video" />
-
-            <ImageButton
-            android:id="@+id/notification"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/notification"
-            android:src="@drawable/notification" />
-
-            <ImageButton
-            android:id="@+id/profile"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/profile"
-            android:src="@drawable/trang_ca_nhan" />
-    </LinearLayout>
 </RelativeLayout>
