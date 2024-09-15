@@ -1,24 +1,30 @@
 package vn.edu.usth.facebookclient;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.facebook.CallbackManager;
 import com.facebook.login.widget.LoginButton;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 
 public class MainActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     //private LoginButton loginButton;
     //private static final String EMAIL = "email";
-
+    private final int[] tabIcons = {
+            R.drawable.home,
+            R.drawable.friends,
+            R.drawable.more,
+            R.drawable.noti,
+            R.drawable.user__1_
+    };
 
 
     @Override
@@ -41,8 +47,23 @@ public class MainActivity extends AppCompatActivity {
         HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(this);
 
         ViewPager2 viewPager = findViewById(R.id.pager);
-        viewPager.setOffscreenPageLimit(3);
+        viewPager.setOffscreenPageLimit(5);
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+            // Set the icon for the tab
+//            if (position < tabIcons.length) {
+//                tab.setIcon(tabIcons[position]);
+//            }
+            tab.setIcon(tabIcons[position]);
+            // Optionally set the title if required
+            //tab.setText(adapter.getPageTitle(position));
+        }).attach();
+//        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+//        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+//        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+
 
 
 
