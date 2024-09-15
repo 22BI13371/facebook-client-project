@@ -48,7 +48,7 @@ public class friend_list extends Fragment {
         peopleYouMayKnowRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // Sample data for friend requests and people you may know
-        List<String> friendRequests = Arrays.asList("John", "Sara", "Michael", "Anna", "David");
+        List<String> friendRequests = Arrays.asList("John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David");
         List<String> peopleYouMayKnow = Arrays.asList("Mary", "James", "Emily", "Peter", "Jane");
 
         // Set the adapters
