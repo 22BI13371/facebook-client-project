@@ -59,6 +59,20 @@
     <string name="add_image">Add image</string>
     <string name="tag_people">Tag people</string>
     <string name="TAB">A Tab Layout</string>
+    <string name="saved">Saved</string>
+    <string name="most_recent">Most recent</string>
+    <string name="collections">Collections</string>
+    <string name="see_all">See all</string>
+    <string name="create">Create</string>
+    <string name="football">Football</string>
+    <string name="watch_later">Watch Later</string>
+    <string name="public_">Public</string>
+    <string name="only_me">Only me</string>
+    <string name="son_tung_mtp_cap">I think of you so much that my hair is messy 🙄</string>
+    <string name="ronaldo_900_cap">Until the last moment. Keep believing!</string>
+    <string name="usth_welcome_gen15_cap">Welcome Gen 15!!!</string>
+    <string name="messi_is_back">Messi is back</string>
+    <string name="porsche">Porsche</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="return_button">return_button</string>
