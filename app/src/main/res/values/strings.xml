@@ -75,5 +75,9 @@
     <string name="TAB">A Tab Layout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="return_button">return_button</string>
+    <string name="search_group">search group</string>
+    <string name="groups_you_ve_joined">Groups you\'ve joined</string>
+    <string name="placeholder_image">Placeholder Image</string>
 
 </resources>
