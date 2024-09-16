@@ -7,4 +7,5 @@
     <color name="dark_blue">#0A2767</color>
     <color name = "grey">#666666</color>
     <color name = "bright_orange">#FFAC1C</color>
+    <color name="light_grey">#DDDDDD</color>
 </resources>
