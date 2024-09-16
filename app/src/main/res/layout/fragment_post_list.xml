@@ -66,7 +66,7 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="10dp"
-                    android:text="Stories"
+                    android:text="@string/stories"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="10dp"
-                    android:text="See Archive >"
+                    android:text="@string/see_archive"
                     android:textColor="#4285F4" />
             </LinearLayout>
 
@@ -105,23 +105,25 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:contentDescription="@string/story_photo"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/placeholder_image" />
+                                android:src="@drawable/profile_avatar" />
 
                             <ImageView
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:layout_gravity="bottom|end"
                                 android:background="@drawable/avatar_circle"
+                                android:contentDescription="@string/Icon1"
                                 android:padding="4dp"
-                                android:src="@drawable/placeholder_image" />
+                                android:src="@drawable/photo_camera_interface_symbol_for_button" />
                         </FrameLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Add Your Story"
+                            android:text="@string/add_your_story"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -137,13 +139,37 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/placeholder_image" />
+                            android:contentDescription="@string/story_photo"
+                            android:src="@drawable/qabd_mu_2022_do_4" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Anita Michaels"
+                            android:text="@string/manchester_united"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Anita Michaels Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/story_photo"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mbappe_real_betis_1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/kylian_mbappe"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -159,13 +185,14 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/placeholder_image" />
+                            android:contentDescription="@string/story_photo"
+                            android:src="@drawable/ballondor" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Anita Michaels"
+                            android:text="@string/cristiano_ballor_d_or"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -180,36 +207,15 @@
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
+                            android:contentDescription="@string/story_photo"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/placeholder_image" />
+                            android:src="@drawable/antony___2024" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="Anita Michaels"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Anita Michaels Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/placeholder_image" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Anita Michaels"
+                            android:text="@string/anthony_dos_santos"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
