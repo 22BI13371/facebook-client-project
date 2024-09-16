@@ -1,0 +1,431 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Facebook Client</string>\r\n    <string name=\"facebook_app_id\">1285479815773488</string>\r\n    <string name=\"fb_login_protocol_scheme\">fb1234</string>\r\n    <string name=\"facebook_client_token\">fab0c0845e97bf46fbf4189b75ae2f35</string>\r\n    <string name=\"homepage\">homepage</string>\r\n    <string name=\"friend_list\">friend_list</string>\r\n    <string name=\"video\">video</string>\r\n    <string name=\"notification\">notification</string>\r\n    <string name=\"profile\">profile</string>\r\n    <string name=\"search\">Search</string>\r\n    <string name=\"camera\">Camera</string>\r\n    <string name=\"messenger\">Messenger</string>\r\n    <string name=\"profile_image\">Profile Image</string>\r\n    <string name=\"user_name\">ICT GUY</string>\r\n    <string name=\"add_to_story\">+ Add to story</string>\r\n    <string name=\"edit_profile\">Edit Profile</string>\r\n    <string name=\"details\">Details</string>\r\n    <string name=\"others\">…</string>\r\n    <string name=\"details_study\">Study at USTH</string>\r\n    <string name=\"details_from\">From Hanoi</string>\r\n    <string name=\"details_live\">Lives in Hanoi</string>\r\n    <string name=\"details_relationship\">Single</string>\r\n    <string name=\"edit_public_details\">Edit public details</string>\r\n    <string name=\"Icon1\">Icon</string>\r\n    <string name=\"like_button_text\">like</string>\r\n    <string name=\"comment_button_text\">comment</string>\r\n    <string name=\"Emily\"><b>Emily</b> updated her cover photo </string>\r\n    <string name=\"time_counter_text\">3 mins ago</string>\r\n    <string name=\"like_number\">1B</string>\r\n    <string name=\"comment_number\">3.6B Comments</string>\r\n    <string name=\"Ronaldo\"><b>SIUUU Ronaldo</b> had a Photoshot session at <b>AL Nassr</b></string>\r\n    <string name=\"Notifications\"><b>Notifications</b></string>\r\n    <string name=\"New\"><b>New</b></string>\r\n    <string name=\"See_all\">See all</string>\r\n    <string name=\"Emily_send_friend_request\"><b>Emily </b>sent you a friend request.</string>\r\n    <string name=\"three_days_ago\">3 days ago</string>\r\n    <string name=\"fifteen_mutual_friends\">15 mutual friends</string>\r\n    <string name=\"Confirm\">Confirm</string>\r\n    <string name=\"Delete\">Delete</string>\r\n    <string name=\"Earlier\"><b>Earlier</b></string>\r\n    <string name=\"ronaldo_bday\">Its <b>Cristiano Ronaldo</b> birthday today. Help him celebrate!</string>\r\n    <string name=\"Anthony\"><b>Anthony dos Santos</b> and 2 other friends had birthdays yesterday.</string>\r\n    <string name=\"Birthdays\"><b>K.Mbappe</b> and <b>URgoat.cr7</b> had birthdays on November 24.</string>\r\n    <string name=\"URgoat.cr7\"><b>URgoat.cr7</b> posted in <b>AL Nassr, Saudi Arabia</b> on Tuesday: \"Cristiano Ronaldo…</string>\r\n    <string name=\"CR7\">A Page you like,\\n<b>Scoring900goals.com</b>, changed its name to <b>GoCristiano</b></string>\r\n    <string name=\"Ballon_dor\"><b>Ballon Dor</b> sent you a friend request.</string>\r\n    <string name=\"Anthony_100M\"><b>Anthony 100M</b> sent you a friend request</string>\r\n    <string name=\"Ten_Hag\"><b>Erik Ten Hag</b> sent you a friend request</string>\r\n    <string name=\"four_hours_ago\">4 hours ago</string>\r\n    <string name=\"A_day_ago\">a day ago</string>\r\n    <string name=\"two_days_ago\">2 days ago</string>\r\n    <string name=\"four_days_ago\">4 days ago</string>\r\n    <string name=\"two_weeks_ago\">2 weeks ago</string>\r\n    <string name=\"cancel_button\">cancel button</string>\r\n    <string name=\"create_post\">create post</string>\r\n    <string name=\"post\">post</string>\r\n    <string name=\"enter_text\">Enter text</string>\r\n    <string name=\"add_image\">Add image</string>\r\n    <string name=\"tag_people\">Tag people</string>\r\n    <string name=\"TAB\">A Tab Layout</string>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n    <string name=\"return_button\">return_button</string>\r\n    <string name=\"search_group\">search group</string>\r\n    <string name=\"groups_you_ve_joined\">Groups you\\'ve joined</string>\r\n    <string name=\"placeholder_image\">Placeholder Image</string>\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 37a4723eca261216ec837d15ca872fec10b5d892)
++++ b/app/src/main/res/values/strings.xml	(date 1726501089783)
+@@ -59,6 +59,20 @@
+     <string name="add_image">Add image</string>
+     <string name="tag_people">Tag people</string>
+     <string name="TAB">A Tab Layout</string>
++    <string name="saved">Saved</string>
++    <string name="most_recent">Most recent</string>
++    <string name="collections">Collections</string>
++    <string name="see_all">See all</string>
++    <string name="create">Create</string>
++    <string name="football">Football</string>
++    <string name="watch_later">Watch Later</string>
++    <string name="public_">Public</string>
++    <string name="only_me">Only me</string>
++    <string name="son_tung_mtp_cap">I think of you so much that my hair is messy 🙄</string>
++    <string name="ronaldo_900_cap">Until the last moment. Keep believing!</string>
++    <string name="usth_welcome_gen15_cap">Welcome Gen 15!!!</string>
++    <string name="messi_is_back">Messi is back</string>
++    <string name="porsche">Porsche</string>
+     <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+     <string name="return_button">return_button</string>
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"deploymentTargetSelector\">\r\n    <selectionStates>\r\n      <SelectionState runConfigName=\"app\">\r\n        <option name=\"selectionMode\" value=\"DROPDOWN\" />\r\n      </SelectionState>\r\n    </selectionStates>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+--- a/.idea/deploymentTargetSelector.xml	(revision 37a4723eca261216ec837d15ca872fec10b5d892)
++++ b/.idea/deploymentTargetSelector.xml	(date 1726501089742)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="deploymentTargetSelector">
+     <selectionStates>
+-      <SelectionState runConfigName="app">
++      <SelectionState runConfigName="MainActivity">
+         <option name="selectionMode" value="DROPDOWN" />
+       </SelectionState>
+     </selectionStates>
+Index: app/src/main/res/layout/fragment_saved.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_saved.xml b/app/src/main/res/layout/fragment_saved.xml
+new file mode 100644
+--- /dev/null	(date 1726501089783)
++++ b/app/src/main/res/layout/fragment_saved.xml	(date 1726501089783)
+@@ -0,0 +1,225 @@
++<?xml version="1.0" encoding="utf-8"?>
++
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@color/light_grey"
++    android:orientation="vertical"
++    android:padding="12dp">
++
++    <TextView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="@string/saved"
++        android:textSize="22sp"
++        android:textStyle="bold"
++        android:layout_gravity="center"
++        android:paddingBottom="10dp"/>
++
++    <TextView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="@string/most_recent"
++        android:textSize="18sp"
++        android:textStyle="bold"
++        android:paddingBottom="8dp"/>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:background="@color/white"
++            android:padding="12dp"
++            android:layout_marginBottom="10dp"
++            android:orientation="horizontal">
++
++            <ImageView
++                android:layout_width="100dp"
++                android:layout_height="80dp"
++                android:layout_marginEnd="12dp"
++                android:src="@drawable/ronaldo_900"
++                android:scaleType="centerCrop"
++                android:contentDescription="@string/ronaldo_900_cap"/>
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/ronaldo_900_cap" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:background="@color/white"
++            android:padding="12dp"
++            android:layout_marginBottom="10dp"
++            android:orientation="horizontal">
++
++            <ImageView
++                android:layout_width="100dp"
++                android:layout_height="80dp"
++                android:layout_marginEnd="12dp"
++                android:src="@drawable/son_tung_mtp"
++                android:scaleType="centerCrop"
++                android:contentDescription="@string/son_tung_mtp_cap"/>
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/son_tung_mtp_cap" />
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:background="@color/white"
++            android:padding="12dp"
++            android:layout_marginBottom="10dp"
++            android:orientation="horizontal">
++
++            <ImageView
++                android:layout_width="100dp"
++                android:layout_height="80dp"
++                android:layout_marginEnd="12dp"
++                android:src="@drawable/usth_welcome_gen15"
++                android:scaleType="centerCrop"
++                android:contentDescription="@string/usth_welcome_gen15_cap"/>
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/usth_welcome_gen15_cap" />
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++    <Button
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:text="@string/see_all"
++        android:backgroundTint="@color/com_facebook_blue"
++        android:layout_marginBottom="10dp"/>
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical">
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:orientation="horizontal">
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:text="@string/collections"
++                android:textSize="18sp"
++                android:textStyle="bold"
++                android:layout_marginBottom="8dp"/>
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:text="@string/create"
++                android:textColor="@color/com_facebook_blue"
++                android:textSize="18sp"
++                android:textStyle="bold"
++                android:gravity="end"
++                android:layout_marginBottom="8dp"/>
++
++        </LinearLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="wrap_content"
++            android:baselineAligned="false">
++
++            <LinearLayout
++                android:layout_width="0dp"
++                android:layout_height="160dp"
++                android:layout_weight="1"
++                android:background="@color/white"
++                android:orientation="vertical"
++                android:layout_marginEnd="12dp">
++
++                <ImageView
++                    android:layout_width="match_parent"
++                    android:layout_height="0dp"
++                    android:layout_weight="100"
++                    android:contentDescription="@string/messi_is_back"
++                    android:src="@drawable/messi_is_back"
++                    android:scaleType="centerCrop"
++                    tools:ignore="NestedWeights" />
++
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:text="@string/football"
++                    android:textStyle="bold"
++                    android:layout_marginTop="8dp"
++                    android:layout_marginStart="8dp"/>
++
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:text="@string/public_"
++                    android:textSize="12sp"
++                    android:layout_marginStart="8dp"
++                    android:layout_marginBottom="8dp"/>
++
++            </LinearLayout>
++
++            <LinearLayout
++                android:layout_width="0dp"
++                android:layout_height="160dp"
++                android:layout_weight="1"
++                android:background="@color/white"
++                android:orientation="vertical">
++
++                <ImageView
++                    android:layout_width="match_parent"
++                    android:layout_height="0dp"
++                    android:layout_weight="100"
++                    android:src="@drawable/porsche"
++                    android:contentDescription="@string/porsche"
++                    android:scaleType="centerCrop"
++                    tools:ignore="NestedWeights" />
++
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:text="@string/watch_later"
++                    android:textStyle="bold"
++                    android:layout_marginTop="8dp"
++                    android:layout_marginStart="8dp"/>
++
++                <TextView
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:text="@string/only_me"
++                    android:textSize="12sp"
++                    android:layout_marginStart="8dp"
++                    android:layout_marginBottom="8dp"/>
++
++            </LinearLayout>
++
++        </LinearLayout>
++
++    </LinearLayout>
++
++</LinearLayout>
+\ No newline at end of file
+Index: app/src/main/java/vn/edu/usth/facebookclient/SavedFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/vn/edu/usth/facebookclient/SavedFragment.java b/app/src/main/java/vn/edu/usth/facebookclient/SavedFragment.java
+new file mode 100644
+--- /dev/null	(date 1726501089742)
++++ b/app/src/main/java/vn/edu/usth/facebookclient/SavedFragment.java	(date 1726501089742)
+@@ -0,0 +1,62 @@
++package vn.edu.usth.facebookclient;
++
++import android.os.Bundle;
++import androidx.fragment.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++/**
++ * A simple {@link Fragment} subclass.
++ * Use the {@link SavedFragment#newInstance} factory method to
++ * create an instance of this fragment.
++ */
++public class SavedFragment extends Fragment {
++
++    // TODO: Rename parameter arguments, choose names that match
++    // the fragment initialization parameters
++    private static final String ARG_PARAM1 = "param1";
++    private static final String ARG_PARAM2 = "param2";
++
++    // TODO: Rename and change types of parameters
++    private String mParam1;
++    private String mParam2;
++
++    public SavedFragment() {
++        // Required empty public constructor
++    }
++
++    /**
++     * Use this factory method to create a new instance of
++     * this fragment using the provided parameters.
++     *
++     * @param param1 Parameter 1.
++     * @param param2 Parameter 2.
++     * @return A new instance of fragment SavedFragment.
++     */
++    // TODO: Rename and change types and number of parameters
++    public static SavedFragment newInstance(String param1, String param2) {
++        SavedFragment fragment = new SavedFragment();
++        Bundle args = new Bundle();
++        args.putString(ARG_PARAM1, param1);
++        args.putString(ARG_PARAM2, param2);
++        fragment.setArguments(args);
++        return fragment;
++    }
++
++    @Override
++    public void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        if (getArguments() != null) {
++            mParam1 = getArguments().getString(ARG_PARAM1);
++            mParam2 = getArguments().getString(ARG_PARAM2);
++        }
++    }
++
++    @Override
++    public View onCreateView(LayoutInflater inflater, ViewGroup container,
++                             Bundle savedInstanceState) {
++        // Inflate the layout for this fragment
++        return inflater.inflate(R.layout.fragment_saved, container, false);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/vn/edu/usth/facebookclient/MyProfile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/vn/edu/usth/facebookclient/MyProfile.java b/app/src/main/java/vn/edu/usth/facebookclient/MyProfile.java
+new file mode 100644
+--- /dev/null	(date 1726501089742)
++++ b/app/src/main/java/vn/edu/usth/facebookclient/MyProfile.java	(date 1726501089742)
+@@ -0,0 +1,62 @@
++package vn.edu.usth.facebookclient;
++
++import android.os.Bundle;
++import androidx.fragment.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++/**
++ * A simple {@link Fragment} subclass.
++ * Use the {@link MyProfile#newInstance} factory method to
++ * create an instance of this fragment.
++ */
++public class MyProfile extends Fragment {
++
++    // TODO: Rename parameter arguments, choose names that match
++    // the fragment initialization parameters
++    private static final String ARG_PARAM1 = "param1";
++    private static final String ARG_PARAM2 = "param2";
++
++    // TODO: Rename and change types of parameters
++    private String mParam1;
++    private String mParam2;
++
++    public MyProfile() {
++        // Required empty public constructor
++    }
++
++    /**
++     * Use this factory method to create a new instance of
++     * this fragment using the provided parameters.
++     *
++     * @param param1 Parameter 1.
++     * @param param2 Parameter 2.
++     * @return A new instance of fragment MyProfile.
++     */
++    // TODO: Rename and change types and number of parameters
++    public static MyProfile newInstance(String param1, String param2) {
++        MyProfile fragment = new MyProfile();
++        Bundle args = new Bundle();
++        args.putString(ARG_PARAM1, param1);
++        args.putString(ARG_PARAM2, param2);
++        fragment.setArguments(args);
++        return fragment;
++    }
++
++    @Override
++    public void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        if (getArguments() != null) {
++            mParam1 = getArguments().getString(ARG_PARAM1);
++            mParam2 = getArguments().getString(ARG_PARAM2);
++        }
++    }
++
++    @Override
++    public View onCreateView(LayoutInflater inflater, ViewGroup container,
++                             Bundle savedInstanceState) {
++        // Inflate the layout for this fragment
++        return inflater.inflate(R.layout.my_profile, container, false);
++    }
++}
