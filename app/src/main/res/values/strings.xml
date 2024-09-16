@@ -65,5 +65,13 @@
     <string name="search_group">search group</string>
     <string name="groups_you_ve_joined">Groups you\'ve joined</string>
     <string name="placeholder_image">Placeholder Image</string>
+    <string name="anthony_dos_santos">Anthony dos Santos</string>
+    <string name="story_photo">Story Photo</string>
+    <string name="cristiano_ballor_d_or">Cristiano Ballor D\'or</string>
+    <string name="manchester_united">Manchester United</string>
+    <string name="add_your_story">Add Your Story</string>
+    <string name="kylian_mbappe">Kylian Mbappe Real Madrid</string>
+    <string name="stories">Stories</string>
+    <string name="see_archive"><![CDATA[See Archive >]]></string>
 
 </resources>
