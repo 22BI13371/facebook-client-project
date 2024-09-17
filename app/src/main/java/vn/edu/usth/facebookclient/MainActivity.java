@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.friends,
             R.drawable.more,
             R.drawable.noti,
-            R.drawable.user__1_
+            R.drawable.menu
     };
 
 
