@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,8 +35,12 @@
                 android:background="@drawable/rounded_edittext"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
+                android:inputType="text"
+                android:textColor="#404040"
                 android:hint="@string/search"
-                android:padding="8dp"/>
+                android:textColorHint="#595959"
+                android:padding="8dp"
+                android:autofillHints="search"/>
 
             <ImageView
                 android:layout_width="60dp"
@@ -76,7 +81,7 @@
                     android:gravity="center_vertical"
                     android:paddingHorizontal="10dp"
                     android:text="@string/see_archive"
-                    android:textColor="#4285F4" />
+                    android:textColor="@color/dark_blue" />
             </LinearLayout>
 
             <HorizontalScrollView
@@ -127,7 +132,7 @@
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Anita Michaels Story -->
+                    <!-- Manchester United Story -->
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_height="120dp"
@@ -140,7 +145,7 @@
                             android:layout_height="80dp"
                             android:scaleType="centerCrop"
                             android:contentDescription="@string/story_photo"
-                            android:src="@drawable/qabd_mu_2022_do_4" />
+                            android:src="@drawable/muu" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -150,30 +155,36 @@
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Anita Michaels Story -->
+                    <!-- Kylian Mbappe Story -->
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_height="120dp"
                         android:layout_marginEnd="8dp"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:minHeight="48dp"
+                        android:minWidth="48dp"
+                        android:importantForAccessibility="yes"
+                        android:contentDescription="@string/kylian_photo_and_name">
 
                         <ImageView
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:contentDescription="@string/story_photo"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mbappe_real_betis_1" />
+                            android:src="@drawable/mbappe_real_betis_1"
+                            android:importantForAccessibility="no"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:text="@string/kylian_mbappe"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:importantForAccessibility="no"/>
                     </LinearLayout>
 
-                    <!-- Anita Michaels Story -->
+                    <!-- Cristiano Ballor D'or Story -->
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_height="120dp"
@@ -196,7 +207,7 @@
                             android:textSize="12sp" />
                     </LinearLayout>
 
-                    <!-- Anita Michaels Story -->
+                    <!-- Anthony dos Santos Story -->
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_height="120dp"
@@ -218,6 +229,52 @@
                             android:text="@string/anthony_dos_santos"
                             android:textSize="12sp" />
                     </LinearLayout>
+
+                    <!-- Ninja Mbappe Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/story_photo"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mbappe" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/ninja_turtle_mbappe"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Ninja Mbappe Story -->
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/story_photo"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/antony_to_balloon_dior_2024_here_we_go_v0_1mke82tdkxoc1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/anthony_100m_scores"
+                            android:textSize="12sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -234,13 +291,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/post_view1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
-
                     <!-- TODO: Update blank fragment layout -->
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -269,15 +319,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
                             android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Emily"
+                                android:maxWidth="240dp"
                                 android:textSize="16sp"
-                                android:maxWidth="224dp"/>
+                                android:layout_marginEnd="80dp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -295,13 +345,21 @@
 
                     </LinearLayout>
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nature_full_size_desktop_7680x4320_wallpaper_preview"
+                        android:contentDescription="@string/post_photo"/>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
+                        android:paddingEnd="16dp"
+                        android:layout_marginTop="16dp">
 
                         <ImageView
                             android:layout_width="24dp"
@@ -392,15 +450,15 @@
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/Icon1"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
+                                android:src="@drawable/ronaldo_2308_813_jpg" />
 
                         </androidx.cardview.widget.CardView>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
+                            android:layout_marginEnd="56dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -409,79 +467,11 @@
                                 android:maxWidth="240dp"
                                 android:text="@string/Ronaldo"
                                 android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/post_view2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
-
-                    <!-- TODO: Update blank fragment layout -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/girl" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Emily"
-                                android:textSize="16sp" />
-
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/time_counter_text" />
+
                         </LinearLayout>
 
                         <ImageView
@@ -494,25 +484,37 @@
 
                     </LinearLayout>
 
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ronaldo_900_ban_17262778077891006323794"
+                        android:contentDescription="@string/post_photo"/>
+
+
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
+                        android:paddingEnd="16dp"
+                        android:layout_marginTop="16dp">
 
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
                             android:contentDescription="@string/Icon1"
-                            android:src="@drawable/sad" />
+                            android:src="@drawable/heart" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="232dp"
-                            android:text="@string/like_number" />
+                            android:layout_marginStart="4dp"
+                            android:text="@string/_3b" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -572,861 +574,146 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:maxWidth="240dp"
-                                android:text="@string/Ronaldo"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
                 <LinearLayout
-                    android:id="@+id/post_view3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
-
-                    <!-- TODO: Update blank fragment layout -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/girl" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Emily"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/time_counter_text" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/_380510_200"
-                            app:tint="#666666" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/sad" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="232dp"
-                            android:text="@string/like_number" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/comment_number" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/like" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/like_button_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/chat" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment_button_text" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:maxWidth="240dp"
-                                android:text="@string/Ronaldo"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/post_view4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
-
-                    <!-- TODO: Update blank fragment layout -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/girl" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Emily"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/time_counter_text" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/_380510_200"
-                            app:tint="#666666" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/sad" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="232dp"
-                            android:text="@string/like_number" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/comment_number" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/like" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/like_button_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/chat" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment_button_text" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:maxWidth="240dp"
-                                android:text="@string/Ronaldo"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/post_view5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
-
-                    <!-- TODO: Update blank fragment layout -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/girl" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Emily"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/time_counter_text" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/_380510_200"
-                            app:tint="#666666" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/sad" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="232dp"
-                            android:text="@string/like_number" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/comment_number" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/like" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/like_button_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/chat" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment_button_text" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:maxWidth="240dp"
-                                android:text="@string/Ronaldo"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/post_view6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:context=".Postlikecommet">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
 
-                    <!-- TODO: Update blank fragment layout -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/girl" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="80dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Emily"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/time_counter_text" />
-                        </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        app:cardCornerRadius="20dp">
 
                         <ImageView
-                            android:layout_width="24dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:contentDescription="@string/Icon1"
-                            android:src="@drawable/_380510_200"
-                            app:tint="#666666" />
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mbappe_real_betis_1" />
 
-
-                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:contentDescription="@string/Icon1"
-                            android:src="@drawable/sad" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="232dp"
-                            android:text="@string/like_number" />
+                            android:text="@string/mbappe_updated_his_cover_photo"
+                            android:maxWidth="240dp"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="60dp"
+                            tools:ignore="TooManyViews" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/comment_number" />
+                            android:text="@string/time_counter_text" />
                     </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/Icon1"
+                        android:src="@drawable/_380510_200"
+                        app:tint="#666666" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mbappe"
+                    android:contentDescription="@string/post_photo"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:contentDescription="@string/Icon1"
+                        android:src="@drawable/png_transparent_facebook_reaction_haha_hd_logo_thumbnail"
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="232dp"
+                        android:text="@string/like_number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment_number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:baselineAligned="false"
-                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
-                        android:padding="16dp">
+                        tools:ignore="UseCompoundDrawables">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/Icon1"
+                            android:src="@drawable/like" />
 
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/like" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/like_button_text" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_marginEnd="8dp"
-                                android:contentDescription="@string/Icon1"
-                                android:src="@drawable/chat" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment_button_text" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:padding="16dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/ai_day" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="40dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:maxWidth="240dp"
-                                android:text="@string/Ronaldo"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="@color/navy"
-                            app:cardCornerRadius="20dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/Icon1"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/add"
-                                app:tint="@android:color/white" />
-
-                        </androidx.cardview.widget.CardView>
-
-
+                            android:layout_height="wrap_content"
+                            android:text="@string/like_button_text" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="@string/Icon1"
+                            android:src="@drawable/chat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/comment_button_text" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
