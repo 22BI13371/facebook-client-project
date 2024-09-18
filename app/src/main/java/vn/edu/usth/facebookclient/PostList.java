@@ -1,12 +1,16 @@
 package vn.edu.usth.facebookclient;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,19 +50,78 @@ public class PostList extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_post_list, container, false);
+//    }
+//
+//    @Override
+//    public void onViewCreated(View view, Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//        // Find the ImageButton in the fragment's layout
+//        ImageButton profileButton = view.findViewById(R.id.toProfile);
+//
+//        profileButton.setOnClickListener(v -> {
+//            Fragment fragment = getParentFragmentManager().findFragmentById(R.id.main_frame_layout);
+//            if (fragment != null) {
+//                getChildFragmentManager().beginTransaction()
+////                        .hide(this) // Safely hide the fragment if it's not null
+//                        .replace(R.id.main_frame_layout, new MyProfile()) // Replace with MyProfile fragment
+//                        .addToBackStack(null) // Allow back navigation
+//                        .commit();
+//            } else {
+//                // Optionally log or handle the case where no fragment is found
+//                Log.d("FragmentTransaction", "No fragment found in the container to hide.");
+//            }
+//        });
+//    }
+
+    // Interface for communication
+    public interface OnProfileButtonClickListener {
+        void onProfileButtonClicked();
     }
+
+    private OnProfileButtonClickListener callback;
+
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnProfileButtonClickListener) {
+//            callback = (OnProfileButtonClickListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString() + " must implement OnProfileButtonClickListener");
+//        }
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_post_list, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // Find the ImageButton in the fragment's layout
+        ImageButton profileButton = view.findViewById(R.id.toProfile);
+
+        // Set the click listener for the ImageButton
+//        profileButton.setOnClickListener(v -> {
+//            if (callback != null) {
+//                callback.onProfileButtonClicked(); // Notify the activity
+//            }
+//        });
+        profileButton.setOnClickListener(v -> {
+            // Get the ViewPager from the activity
+            ViewPager2 viewPager = getActivity().findViewById(R.id.pager);
+
+            // Switch to the ProfileFragment (assuming it is at index 1)
+            viewPager.setCurrentItem(5, false);
+        });
     }
 }
