@@ -33,6 +33,8 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
             case 5: return new MyProfile();
         }
 
+        return new Menu();
+
     }
     public CharSequence getPageTitle(int page) {
         // returns a tab title corresponding to the specified page
