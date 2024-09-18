@@ -18,19 +18,21 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
     @Override
     public int getItemCount() {
 
-        return 5; // number of pages for a ViewPager
+        return 6; // number of pages for a ViewPager
     }
 
     @NonNull
     @Override
     public Fragment createFragment(int position) {
         switch (position){
-            case 0: return new PostList();
+            default: return new PostList();
             case 1: return new friend_list();
             case 2: return new MakePostFragment();
             case 3: return new Notifications();
+            case 4: return new friend_list();
+            case 5: return new MyProfile();
         }
-        return new GroupsFragment();
+
     }
     public CharSequence getPageTitle(int page) {
         // returns a tab title corresponding to the specified page
