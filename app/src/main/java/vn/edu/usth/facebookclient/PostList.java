@@ -86,15 +86,15 @@ public class PostList extends Fragment {
 
     private OnProfileButtonClickListener callback;
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnProfileButtonClickListener) {
-            callback = (OnProfileButtonClickListener) context;
-        } else {
-            throw new RuntimeException(context.toString() + " must implement OnProfileButtonClickListener");
-        }
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnProfileButtonClickListener) {
+//            callback = (OnProfileButtonClickListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString() + " must implement OnProfileButtonClickListener");
+//        }
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
