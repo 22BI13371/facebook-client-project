@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <!-- Notification header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/menu"
+            android:textSize="32sp"
+            android:layout_marginEnd="96dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Icon1"
+            android:maxWidth="24dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/_380510_200"
+            app:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/addGroupButton"
+            style="@style/com_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:text="@string/group"
+            android:textSize="16sp"
+            android:layout_marginEnd="4dp"/>
+
+
+        <Button
+            android:id="@+id/addMemoryButton"
+            style="@style/com_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_dialog_info"
+            android:text="@string/Memory"
+
+            android:textSize="16sp"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/addSettingsButton"
+            style="@style/com_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_compass"
+            android:text="@string/settings"
+
+            android:textSize="16sp"
+            android:layout_marginEnd="4dp"/>
+
+
+        <Button
+            android:id="@+id/addSavedButton"
+            style="@style/com_facebook_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="@string/saved"
+            android:textSize="16sp"
+
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

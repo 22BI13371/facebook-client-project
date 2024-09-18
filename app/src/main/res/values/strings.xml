@@ -104,5 +104,8 @@
     <string name="like_score">2B</string>
     <string name="comment_score">5B Comments</string>
     <string name="Icon2">Angry icon \n</string>
+    <string name="menu">Menu</string>
+    <string name="group">Group</string>
+    <string name="settings">Settings</string>
 
 </resources>
