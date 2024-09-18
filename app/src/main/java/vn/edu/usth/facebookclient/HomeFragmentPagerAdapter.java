@@ -30,7 +30,7 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
             case 2: return new MakePostFragment();
             case 3: return new Notifications();
         }
-        return new GroupsFragment();
+        return new Menu();
     }
     public CharSequence getPageTitle(int page) {
         // returns a tab title corresponding to the specified page

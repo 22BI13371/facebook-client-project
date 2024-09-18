@@ -30,8 +30,8 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:layout_marginHorizontal="8dp"
                 android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
                 android:background="@drawable/rounded_edittext"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
@@ -632,9 +632,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/mbappe"
-                    android:contentDescription="@string/post_photo"
-                    android:background="@android:color/transparent"/>
+                    android:src="@drawable/kylian_mbappe_ra_mat_real_madrid_2024_7_1721141697"
+                    android:contentDescription="@string/post_photo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -656,6 +655,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="232dp"
+                        android:layout_marginStart="4dp"
                         android:text="@string/like_number" />
 
                     <TextView
