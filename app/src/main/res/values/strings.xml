@@ -93,5 +93,16 @@
     <string name="anthony_100m_scores">Anthony 100M scores</string>
     <string name="post_photo">Post Photo</string>
     <string name="kylian_photo_and_name">Kylian photo and name</string>
+    <string name="Memory">Memory</string>
+    <string name="clock">clock</string>
+    <string name="setting">"setting "</string>
+    <string name="arrow">arrow\n</string>
+    <string name="headpicture">picture of memory</string>
+    <string name="note">From the most recent memories to those long ago, we hope you enjoy looking back at your memories on Facebook</string>
+    <string name="ICT_guy">ICT guy has updated his avatar</string>
+    <string name="year_time">2 years ago</string>
+    <string name="like_score">2B</string>
+    <string name="comment_score">5B Comments</string>
+    <string name="Icon2">Angry icon \n</string>
 
 </resources>
