@@ -29,7 +29,7 @@ public class Reels extends Fragment {
             R.drawable.friends,
             R.drawable.more,
             R.drawable.noti,
-            R.drawable.menu
+            R.drawable.profile
     };
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -76,14 +76,14 @@ public class Reels extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mview =  inflater.inflate(R.layout.fragment_reels, container, false);
+
         tabLayout = mview.findViewById(R.id.tab);
 //        viewPager = mview.findViewById(R.id.reels_pager);
 //        viewPager.setOffscreenPageLimit(5);
         ReelsViewPagerAdapter adapter = new ReelsViewPagerAdapter(getChildFragmentManager(), getLifecycle());
         //viewPager.setAdapter(adapter);
         new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
-            // Configure the tab for the corresponding position
-            // You can set the tab title, icon, etc. here
+
             tab.setIcon(tabIcons[position]);
         }).attach();
 
