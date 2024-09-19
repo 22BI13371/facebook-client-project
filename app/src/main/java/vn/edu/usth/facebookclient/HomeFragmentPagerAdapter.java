@@ -29,11 +29,9 @@ public class HomeFragmentPagerAdapter extends FragmentStateAdapter {
             case 1: return new friend_list();
             case 2: return new MakePostFragment();
             case 3: return new Notifications();
-            case 4: return new friend_list();
+            case 4: return new Menu();
             case 5: return new MyProfile();
         }
-
-        return new Menu();
 
     }
     public CharSequence getPageTitle(int page) {
