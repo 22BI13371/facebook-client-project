@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:layout_marginRight="50dp"
-                android:text="@string/Memory"
+                android:text="@string/Memories"
                 android:textSize="32sp" />
 
             <ImageView

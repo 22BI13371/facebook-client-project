@@ -7,7 +7,7 @@
     <LinearLayout
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
         android:padding="16dp">
@@ -23,6 +23,7 @@
             android:id="@+id/suggestionsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/Teal"
             android:text="Suggestions" />
 
         <Button
@@ -30,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Friends"
+            android:backgroundTint="@color/Teal"
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
@@ -51,21 +53,21 @@
         android:layout_marginTop="8dp" />
 
     <!-- Title for People You May Know Section -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="People You May Know"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="People You May Know"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginTop="16dp" />-->
 
-    <!-- RecyclerView for People You May Know -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/peopleYouMayKnowRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="8dp" />
+<!--    &lt;!&ndash; RecyclerView for People You May Know &ndash;&gt;-->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/peopleYouMayKnowRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginTop="8dp" />-->
     </LinearLayout>
 
     <!-- Navigation Bar -->

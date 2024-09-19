@@ -53,7 +53,7 @@
     <string name="four_days_ago">4 days ago</string>
     <string name="two_weeks_ago">2 weeks ago</string>
     <string name="cancel_button">cancel button</string>
-    <string name="create_post">create post</string>
+    <string name="create_post"><b>Create post</b></string>
     <string name="post">post</string>
     <string name="enter_text">Enter text</string>
     <string name="add_image">Add image</string>
@@ -93,7 +93,7 @@
     <string name="anthony_100m_scores">Anthony 100M scores</string>
     <string name="post_photo">Post Photo</string>
     <string name="kylian_photo_and_name">Kylian photo and name</string>
-    <string name="Memory">Memory</string>
+    <string name="Memories">Memories</string>
     <string name="clock">clock</string>
     <string name="setting">"setting "</string>
     <string name="arrow">arrow\n</string>
@@ -104,7 +104,7 @@
     <string name="like_score">2B</string>
     <string name="comment_score">5B Comments</string>
     <string name="Icon2">Angry icon \n</string>
-    <string name="menu">Menu</string>
+    <string name="menu"><b>Menu</b></string>
     <string name="group">Group</string>
     <string name="settings">Settings</string>
     <string name="group_button">Group button</string>

@@ -24,6 +24,7 @@
         android:id="@+id/addFriendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/IndianRed"
         android:text="Add Friend" />
 
     <Button
@@ -31,5 +32,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
+        android:backgroundTint="@color/gray"
         android:layout_marginStart="8dp" />
 </LinearLayout>

@@ -24,12 +24,14 @@
         android:id="@+id/confirmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/Teal"
         android:text="Confirm" />
 
     <Button
         android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkGray"
         android:text="Delete"
         android:layout_marginStart="8dp" />
 </LinearLayout>

@@ -27,6 +27,9 @@
         android:contentDescription="@string/TAB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabIndicatorColor="@color/Teal"
+        app:tabRippleColor="@null"
+        app:tabIconTint="@color/tab_icon_color_selector"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

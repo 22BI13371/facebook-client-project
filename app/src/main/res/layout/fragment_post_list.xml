@@ -54,237 +54,10 @@
                 android:contentDescription="@string/messenger"
                 android:padding="2dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_messenger" />
+                android:src="@drawable/_380510_200" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/stories"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="6dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="10dp"
-                    android:text="@string/stories"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="10dp"
-                    android:text="@string/see_archive"
-                    android:textColor="@color/dark_blue" />
-            </LinearLayout>
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <!-- Add Your Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <FrameLayout
-                            android:layout_width="80dp"
-                            android:layout_height="80dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:contentDescription="@string/story_photo"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/profile_avatar" />
-
-                            <ImageView
-                                android:layout_width="24dp"
-                                android:layout_height="24dp"
-                                android:layout_gravity="bottom|end"
-                                android:background="@drawable/avatar_circle"
-                                android:contentDescription="@string/Icon1"
-                                android:padding="4dp"
-                                android:src="@drawable/photo_camera_interface_symbol_for_button" />
-                        </FrameLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/add_your_story"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Manchester United Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/muu" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/manchester_united"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Kylian Mbappe Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:contentDescription="@string/kylian_photo_and_name"
-                        android:gravity="center"
-                        android:importantForAccessibility="yes"
-                        android:minWidth="48dp"
-                        android:minHeight="48dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:importantForAccessibility="no"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/mbappe_real_betis_1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:importantForAccessibility="no"
-                            android:text="@string/kylian_mbappe"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Cristiano Ballor D'or Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/ballondor" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/cristiano_ballor_d_or"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Anthony dos Santos Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/antony___2024" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/anthony_dos_santos"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Ninja Mbappe Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/mbappe" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/ninja_turtle_mbappe"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <!-- Ninja Mbappe Story -->
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:layout_marginEnd="8dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:contentDescription="@string/story_photo"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/antony_to_balloon_dior_2024_here_we_go_v0_1mke82tdkxoc1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/anthony_100m_scores"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-
-        </LinearLayout>
 
         <ScrollView
             android:id="@+id/post_scroll_view"
@@ -292,10 +65,240 @@
             android:layout_height="0dp"
             android:layout_weight="2">
 
+<!--            Stories Section-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/stories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="6dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="10dp"
+                            android:text="@string/stories"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="10dp"
+                            android:text="@string/see_archive"
+                            android:textColor="@color/dark_blue" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <!-- Add Your Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:contentDescription="@string/story_photo"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/profile_avatar" />
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="bottom|end"
+                                        android:background="@drawable/avatar_circle"
+                                        android:contentDescription="@string/Icon1"
+                                        android:padding="4dp"
+                                        android:src="@drawable/photo_camera_interface_symbol_for_button" />
+                                </FrameLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/add_your_story"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Manchester United Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/muu" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/manchester_united"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Kylian Mbappe Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:contentDescription="@string/kylian_photo_and_name"
+                                android:gravity="center"
+                                android:importantForAccessibility="yes"
+                                android:minWidth="48dp"
+                                android:minHeight="48dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:importantForAccessibility="no"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/mbappe_real_betis_1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:importantForAccessibility="no"
+                                    android:text="@string/kylian_mbappe"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Cristiano Ballor D'or Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ballondor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/cristiano_ballor_d_or"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Anthony dos Santos Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/antony___2024" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/anthony_dos_santos"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Ninja Mbappe Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/mbappe" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/ninja_turtle_mbappe"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <!-- Ninja Mbappe Story -->
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:contentDescription="@string/story_photo"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/antony_to_balloon_dior_2024_here_we_go_v0_1mke82tdkxoc1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/anthony_100m_scores"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
 
                 <!-- TODO: Update blank fragment layout -->
                 <LinearLayout

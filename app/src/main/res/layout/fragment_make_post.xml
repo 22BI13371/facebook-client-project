@@ -32,6 +32,7 @@
                 android:layout_weight="50"
                 android:gravity="center"
                 android:text="@string/create_post"
+                android:textSize="16sp"
                 android:textAlignment="center" />
 
             <Button
@@ -39,6 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/Teal"
                 android:text="@string/post" />
 
         </LinearLayout>
@@ -66,33 +69,36 @@
 
             <Button
                 android:id="@+id/addImageButton"
-                style="@style/com_facebook_button"
+                android:backgroundTint="@color/Teal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@android:drawable/ic_menu_gallery"
                 android:text="@string/add_image"
-                android:textSize="16sp" />
+                android:layout_gravity="start"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/useCameraButton"
-                style="@style/com_facebook_button"
+                android:backgroundTint="@color/Teal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@android:drawable/ic_menu_camera"
                 android:text="@string/camera"
-                android:textSize="16sp" />
+                android:layout_gravity="start"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/tagPeopleButton"
-                style="@style/com_facebook_button"
+                android:backgroundTint="@color/Teal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@android:drawable/ic_menu_myplaces"
                 android:text="@string/tag_people"
-                android:textSize="16sp" />
+                android:layout_gravity="start"
+                android:textSize="12sp" />
         </LinearLayout>
 
 

@@ -139,7 +139,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_edittext"
-                    android:backgroundTint="@color/dark_blue"
+                    android:backgroundTint="@color/Teal"
                     android:gravity="center"
                     android:text="@string/Confirm"
                     android:textColor="@color/white" />

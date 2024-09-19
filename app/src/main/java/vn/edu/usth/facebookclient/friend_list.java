@@ -41,19 +41,19 @@ public class friend_list extends Fragment {
 
         // Initialize RecyclerViews
         friendRequestsRecyclerView = view.findViewById(R.id.friendRequestsRecyclerView);
-        peopleYouMayKnowRecyclerView = view.findViewById(R.id.peopleYouMayKnowRecyclerView);
+//        peopleYouMayKnowRecyclerView = view.findViewById(R.id.peopleYouMayKnowRecyclerView);
 
         // Set layout managers
         friendRequestsRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        peopleYouMayKnowRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//        peopleYouMayKnowRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // Sample data for friend requests and people you may know
-        List<String> friendRequests = Arrays.asList("John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David");
-        List<String> peopleYouMayKnow = Arrays.asList("Mary", "James", "Emily", "Peter", "Jane");
+        List<String> friendRequests = Arrays.asList("John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David");
+//        List<String> peopleYouMayKnow = Arrays.asList("Mary", "James", "Emily", "Peter", "Jane");
 
         // Set the adapters
         friendRequestsRecyclerView.setAdapter(new FriendRequestAdapter(friendRequests));
-        peopleYouMayKnowRecyclerView.setAdapter(new PeopleYouMayKnowAdapter(peopleYouMayKnow));
+//        peopleYouMayKnowRecyclerView.setAdapter(new PeopleYouMayKnowAdapter(peopleYouMayKnow));
 
         return view;
     }
