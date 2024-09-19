@@ -33,69 +33,62 @@
             app:tint="@color/grey" />
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/addGroupButton"
-            style="@style/com_facebook_button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
             android:text="@string/group"
-            android:textSize="16sp"
-            android:layout_marginEnd="4dp"/>
-
-
-        <Button
-            android:id="@+id/addMemoryButton"
-            style="@style/com_facebook_button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_dialog_info"
-            android:text="@string/Memory"
-
-            android:textSize="16sp"
-            android:layout_marginStart="4dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal"
-        android:padding="8dp">
+            android:textSize="32sp"
+            android:drawableLeft="@android:drawable/ic_dialog_map"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:contentDescription="@string/group_button"/>
 
         <Button
-            android:id="@+id/addSettingsButton"
-            style="@style/com_facebook_button"
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_compass"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
             android:text="@string/settings"
-
-            android:textSize="16sp"
-            android:layout_marginEnd="4dp"/>
-
-
+            android:textSize="32sp"
+            android:drawableLeft="@android:drawable/ic_menu_compass"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:contentDescription="@string/settings_button"/>
         <Button
-            android:id="@+id/addSavedButton"
-            style="@style/com_facebook_button"
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:text="@string/Memory"
+            android:textSize="32sp"
+            android:drawableLeft="@android:drawable/ic_menu_compass"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:contentDescription="@string/memory_button"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
             android:text="@string/saved"
-            android:textSize="16sp"
-
-            android:layout_marginStart="4dp"/>
-
+            android:textSize="32sp"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:contentDescription="@string/saved_button"/>
     </LinearLayout>
 
 
