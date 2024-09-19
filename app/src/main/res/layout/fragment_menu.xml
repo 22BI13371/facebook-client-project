@@ -51,7 +51,7 @@
             android:gravity="center"
             android:textColor="@android:color/black"
             android:layout_gravity="center"
-            android:contentDescription="@string/Icon1"/>
+            android:contentDescription="@string/group_button"/>
 
         <Button
             android:layout_marginTop="8dp"
@@ -64,7 +64,7 @@
             android:gravity="center"
             android:textColor="@android:color/black"
             android:layout_gravity="center"
-            android:contentDescription="@string/Icon1"/>
+            android:contentDescription="@string/settings_button"/>
         <Button
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             android:gravity="center"
             android:textColor="@android:color/black"
             android:layout_gravity="center"
-            android:contentDescription="@string/Icon1"/>
+            android:contentDescription="@string/memory_button"/>
         <Button
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:gravity="center"
             android:textColor="@android:color/black"
             android:layout_gravity="center"
-            android:contentDescription="@string/Icon1"/>
+            android:contentDescription="@string/saved_button"/>
     </LinearLayout>
 
 
