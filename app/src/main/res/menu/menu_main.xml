@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/app_bar_refresh"
+            android:icon="@android:drawable/stat_notify_sync"
+            android:title="Refresh"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/app_bar_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search"
+            app:actionViewClass="android.widget.SearchView"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/app_bar_logout"
+            android:title="Logout" />
+    </group>
+</menu>

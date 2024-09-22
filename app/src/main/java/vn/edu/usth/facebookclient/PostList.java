@@ -79,13 +79,6 @@ public class PostList extends Fragment {
 //        });
 //    }
 
-    // Interface for communication
-    public interface OnProfileButtonClickListener {
-        void onProfileButtonClicked();
-    }
-
-    private OnProfileButtonClickListener callback;
-
 //    @Override
 //    public void onAttach(Context context) {
 //        super.onAttach(context);

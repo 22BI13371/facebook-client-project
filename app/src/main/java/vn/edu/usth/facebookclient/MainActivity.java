@@ -1,22 +1,23 @@
 package vn.edu.usth.facebookclient;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageButton;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.facebook.CallbackManager;
-import com.facebook.login.widget.LoginButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import vn.edu.usth.facebookclient.R;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
+
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.menu,
             R.drawable.profile
     };
+    private Menu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(this);
 
         ViewPager2 viewPager = findViewById(R.id.pager);
-        viewPager.setOffscreenPageLimit(100);
+        viewPager.setOffscreenPageLimit(6);
         viewPager.setAdapter(adapter);
-        viewPager.setUserInputEnabled(false);
+//        viewPager.setUserInputEnabled(false);
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
@@ -67,6 +69,43 @@ public class MainActivity extends AppCompatActivity {
             // Optionally set the title if required
             //tab.setText(adapter.getPageTitle(position));
         }).attach();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("Homepage");
+
+        toolbar.showOverflowMenu();
+
+        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                Log.d("ViewPager", String.valueOf(position));
+                switch (position) {
+                    case 0:
+                        getSupportActionBar().setTitle("Homepage");
+                        break;
+                    case 1:
+                        getSupportActionBar().setTitle("Friends");
+                        break;
+                    case 2:
+                        getSupportActionBar().setTitle("Add Post");
+                        break;
+                    case 3:
+                        getSupportActionBar().setTitle("Noptifications");
+                        break;
+                    case 4:
+                        getSupportActionBar().setTitle("Menu");
+                        break;
+                    case 5:
+                        getSupportActionBar().setTitle("Profile");
+                        break;
+                    default:
+                        getSupportActionBar().setTitle("Facebook Client");
+                        break;
+                }
+            }
+        });
 
 //        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
 //        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
@@ -104,20 +143,52 @@ public class MainActivity extends AppCompatActivity {
     public void onPause() {
         super.onPause();
     }
+
     public void onResume() {
         super.onResume();
     }
+
     public void onStart() {
         super.onStart();
     }
+
     public void onStop() {
         super.onStop();
     }
+
     public void onDestroy() {
         super.onDestroy();
     }
 
-//    @Override
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        this.menu = menu;
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int duration = Toast.LENGTH_SHORT;
+        CharSequence refreshToast = "Refreshing";
+
+        if (item.getItemId() == R.id.app_bar_refresh) {
+            Toast toast = Toast.makeText(this /* MyActivity */, refreshToast, duration);
+            toast.show();
+            return true;
+        } else if (item.getItemId() == R.id.app_bar_search) {
+            Toast toast = Toast.makeText(this, "Searching", duration);
+            toast.show();
+            return true;
+        } else if (item.getItemId() == R.id.app_bar_logout) {
+            Toast toast = Toast.makeText(this, "Logging out", duration);
+            toast.show();
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
+
+        //    @Override
 //    public void onProfileButtonClicked() {
 //        Fragment fragment = getParentFragmentManager().findFragmentById(R.id.main_frame_layout);
 //        getSupportFragmentManager().beginTransaction()
@@ -125,4 +196,5 @@ public class MainActivity extends AppCompatActivity {
 //                .addToBackStack(null) // Add transaction to back stack
 //                .commit();
 //    }
+    }
 }
