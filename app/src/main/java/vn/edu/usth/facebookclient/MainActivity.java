@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.profile
     };
     private Menu menu;
+    private int position;
+    ViewPager2 viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 //                .commit();
         HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(this);
 
-        ViewPager2 viewPager = findViewById(R.id.pager);
+        viewPager = findViewById(R.id.pager);
         viewPager.setOffscreenPageLimit(6);
         viewPager.setAdapter(adapter);
 //        viewPager.setUserInputEnabled(false);
@@ -83,24 +85,31 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("ViewPager", String.valueOf(position));
                 switch (position) {
                     case 0:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Homepage");
                         break;
                     case 1:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Friends");
                         break;
                     case 2:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Add Post");
                         break;
                     case 3:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Noptifications");
                         break;
                     case 4:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Menu");
                         break;
                     case 5:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Profile");
                         break;
                     default:
+                        invalidateOptionsMenu();
                         getSupportActionBar().setTitle("Facebook Client");
                         break;
                 }
@@ -163,7 +172,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        int currectPagePos = viewPager.getCurrentItem();
         this.menu = menu;
+        MenuItem menuItem;
+
+        switch (currectPagePos) {
+            case 0:
+                menu.findItem(R.id.app_bar_profile).setVisible(true);
+                menu.findItem(R.id.app_bar_settings).setVisible(false);
+                menu.findItem(R.id.app_bar_refresh).setVisible(false);
+                break;
+            case 1:
+            case 2:
+                menuItem = menu.findItem(R.id.app_bar_settings).setVisible(false);
+                menu.findItem(R.id.app_bar_refresh).setVisible(false);
+                break;
+            case 3:
+            case 4:
+                menuItem = menu.findItem(R.id.app_bar_search).setVisible(false);
+                menu.findItem(R.id.app_bar_settings).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+                break;
+            case 6:
+                menu.findItem(R.id.app_bar_refresh).setVisible(false);
+
+            default:
+                break;
+        }
+
         return true;
     }
 
@@ -183,6 +218,9 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.app_bar_logout) {
             Toast toast = Toast.makeText(this, "Logging out", duration);
             toast.show();
+            return true;
+        } else if (item.getItemId() == R.id.app_bar_profile) {
+            viewPager.setCurrentItem(5, false);
             return true;
         } else {
             return super.onOptionsItemSelected(item);

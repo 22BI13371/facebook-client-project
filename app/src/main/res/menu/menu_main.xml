@@ -4,18 +4,27 @@
 
     <group >
         <item
+            android:id="@+id/app_bar_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile"
+            android:visible="false" />
+        <item
             android:id="@+id/app_bar_refresh"
             android:icon="@android:drawable/stat_notify_sync"
-            android:title="Refresh"
+            android:title="@string/refresh"
             app:showAsAction="always" />
+        <item
+            android:id="@+id/app_bar_settings"
+            android:icon="@drawable/setting"
+            android:title="@string/settings" />
         <item
             android:id="@+id/app_bar_search"
             android:icon="@drawable/ic_search"
-            android:title="Search"
+            android:title="@string/search"
             app:actionViewClass="android.widget.SearchView"
             app:showAsAction="always" />
         <item
             android:id="@+id/app_bar_logout"
-            android:title="Logout" />
+            android:title="@string/logout" />
     </group>
 </menu>
