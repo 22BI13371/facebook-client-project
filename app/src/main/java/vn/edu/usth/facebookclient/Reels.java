@@ -77,15 +77,15 @@ public class Reels extends Fragment {
         // Inflate the layout for this fragment
         mview =  inflater.inflate(R.layout.fragment_reels, container, false);
 
-        tabLayout = mview.findViewById(R.id.tab);
+//        tabLayout = mview.findViewById(R.id.tab);
 //        viewPager = mview.findViewById(R.id.reels_pager);
 //        viewPager.setOffscreenPageLimit(5);
-        ReelsViewPagerAdapter adapter = new ReelsViewPagerAdapter(getChildFragmentManager(), getLifecycle());
-        //viewPager.setAdapter(adapter);
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
-
-            tab.setIcon(tabIcons[position]);
-        }).attach();
+//        ReelsViewPagerAdapter adapter = new ReelsViewPagerAdapter(getChildFragmentManager(), getLifecycle());
+//        //viewPager.setAdapter(adapter);
+//        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+//
+//            tab.setIcon(tabIcons[position]);
+//        }).attach();
 
         return mview;
     }
