@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
                 menu.findItem(R.id.app_bar_profile).setVisible(true);
                 menu.findItem(R.id.app_bar_settings).setVisible(false);
                 menu.findItem(R.id.app_bar_refresh).setVisible(false);
+                menu.findItem(R.id.app_bar_profile).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
                 break;
             case 1:
             case 2:

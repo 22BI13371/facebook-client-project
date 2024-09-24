@@ -99,22 +99,5 @@ public class PostList extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        // Find the ImageButton in the fragment's layout
-        ImageButton profileButton = view.findViewById(R.id.toProfile);
-
-        // Set the click listener for the ImageButton
-//        profileButton.setOnClickListener(v -> {
-//            if (callback != null) {
-//                callback.onProfileButtonClicked(); // Notify the activity
-//            }
-//        });
-        profileButton.setOnClickListener(v -> {
-            // Get the ViewPager from the activity
-            ViewPager2 viewPager = getActivity().findViewById(R.id.pager);
-
-            // Switch to the ProfileFragment (assuming it is at index 1)
-            viewPager.setCurrentItem(5, false);
-        });
     }
 }
