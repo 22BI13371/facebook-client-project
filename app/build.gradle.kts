@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.facebook.android.sdk)
     implementation(libs.legacy.support.v4)
     implementation(libs.recyclerview)
+    implementation(libs.picasso)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
