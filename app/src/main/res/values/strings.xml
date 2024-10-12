@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Facebook Client</string>
-    <string name="facebook_app_id">1285479815773488</string>
+    <string name="facebook_app_id">367325453100475</string>
     <string name="fb_login_protocol_scheme">fb1234</string>
-    <string name="facebook_client_token">fab0c0845e97bf46fbf4189b75ae2f35</string>
+    <string name="facebook_client_token">3f124e2a435f338026010f7d33b71bbf</string>
     <string name="homepage">homepage</string>
     <string name="friend_list">friend_list</string>
     <string name="video">video</string>
@@ -73,7 +73,6 @@
     <string name="usth_welcome_gen15_cap">Welcome Gen 15!!!</string>
     <string name="messi_is_back">Messi is back</string>
     <string name="porsche">Porsche</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="return_button">return_button</string>
     <string name="search_group">search group</string>
