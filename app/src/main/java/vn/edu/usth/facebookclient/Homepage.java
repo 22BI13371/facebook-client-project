@@ -1,5 +1,6 @@
 package vn.edu.usth.facebookclient;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -186,6 +187,7 @@ public class Homepage extends AppCompatActivity {
         } else if (item.getItemId() == R.id.app_bar_logout) {
             Toast toast = Toast.makeText(this, "Logging out", duration);
             toast.show();
+            finish();
             return true;
         } else if (item.getItemId() == R.id.app_bar_profile) {
             viewPager.setCurrentItem(5, false);
