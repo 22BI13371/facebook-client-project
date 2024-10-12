@@ -7,6 +7,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -34,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     private LoginButton loginButton;
     private final Activity context = this;
-    private final List<String> PERMS = Arrays.asList("email", "user_gender", "user_age_range");
+    private final List<String> PERMS = Arrays.asList("email", "user_gender", "user_age_range", "user_friends");
+    private Button homePageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        homePageButton = (Button) findViewById(R.id.toHomePageButton);
+        homePageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(context, Homepage.class));
+            }
         });
 
         loginButton = findViewById(R.id.login_button);
@@ -92,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
 
     AccessTokenTracker accessTokenTracker = new AccessTokenTracker() {
         @Override
-        protected void onCurrentAccessTokenChanged(@Nullable AccessToken accessToken, @Nullable AccessToken accessToken1) {
-            if (accessToken1 == null) {
+        protected void onCurrentAccessTokenChanged(@Nullable AccessToken accessToken, @Nullable AccessToken currentAccessToken) {
+            if (currentAccessToken == null) {
                 LoginManager.getInstance().logOut();
             }
         }
