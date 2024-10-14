@@ -116,5 +116,7 @@
 
     <string name="reaction_count">100k</string>
     <string name="cmt_count">12k</string>
+    <string name="my_friends">My Friends</string>
+    <string name="friend_requests">Friend Requests</string>
 
 </resources>
