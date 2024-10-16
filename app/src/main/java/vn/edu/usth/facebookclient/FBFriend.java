@@ -4,6 +4,11 @@ public class FBFriend {
     private String id;
     private String name;
 
+    public FBFriend(String id, String name) {
+        this.name = name;
+        this.id = id;
+    }
+
     public String getId() {
         return id;
     }
