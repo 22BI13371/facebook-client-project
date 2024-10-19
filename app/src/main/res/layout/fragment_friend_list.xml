@@ -23,36 +23,65 @@
             android:id="@+id/suggestionsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:backgroundTint="@color/Teal"
-            android:text="Suggestions" />
+            android:text="Suggestions"
+            android:textSize="11sp" />
 
         <Button
             android:id="@+id/myFriendsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Friends"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/Teal"
-            android:layout_marginStart="8dp" />
+            android:text="My Friends"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/friendRequestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Teal"
+            android:text="Requests"
+            android:textSize="11sp" />
     </LinearLayout>
 
     <!-- Title for Friend Requests Section -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Friend Requests"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/friendListTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Friend Requests"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     <!-- RecyclerView for Friend Requests -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/friendRequestsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="8dp" />
 
-    <!-- Title for People You May Know Section -->
+        <FrameLayout
+            android:id="@+id/friendContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/friendRequestsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/friendListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <!-- Title for People You May Know Section -->
 <!--    <TextView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
