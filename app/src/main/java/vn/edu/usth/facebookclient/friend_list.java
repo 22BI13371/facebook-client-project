@@ -1,11 +1,13 @@
 package vn.edu.usth.facebookclient;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.FragmentActivity;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,8 +17,10 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
+import com.facebook.login.LoginManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,6 +40,7 @@ public class friend_list extends Fragment {
     private RecyclerView friendListRecyclerView;
     private TextView textView;
     private FriendListItemAdapter friendListItemAdapter;
+    private CallbackManager callbackManager;
 
     public friend_list() {
         // Required empty public constructor
@@ -90,26 +95,30 @@ public class friend_list extends Fragment {
             }
         });
 
-        GraphRequest graphRequestFriend = GraphRequest.newMyFriendsRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONArrayCallback() {
-            @Override
-            public void onCompleted(@Nullable JSONArray jsonArray, @Nullable GraphResponse graphResponse) {
-                assert jsonArray != null;
-                Log.d("Graph response", jsonArray.toString());
-                ArrayList<FBFriend> fbFriends = new ArrayList<>();
-                for (int i = 0; i < jsonArray.length(); i ++) {
-                    try {
-                        JSONObject object = jsonArray.getJSONObject(i);
-                        fbFriends.add(new FBFriend(object.getString("id"), object.getString("name")));
-                    } catch (JSONException e) {
-                        throw new RuntimeException(e);
+        if (AccessToken.getCurrentAccessToken() != null) {
+            GraphRequest graphRequestFriend = GraphRequest.newMyFriendsRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONArrayCallback() {
+                @Override
+                public void onCompleted(@Nullable JSONArray jsonArray, @Nullable GraphResponse graphResponse) {
+                    assert jsonArray != null;
+                    Log.d("Graph response", jsonArray.toString());
+                    ArrayList<FBFriend> fbFriends = new ArrayList<>();
+                    for (int i = 0; i < jsonArray.length(); i ++) {
+                        try {
+                            JSONObject object = jsonArray.getJSONObject(i);
+                            fbFriends.add(new FBFriend(object.getString("id"), object.getString("name")));
+                        } catch (JSONException e) {
+                            throw new RuntimeException(e);
+                        }
                     }
+                    friendListItemAdapter = new FriendListItemAdapter(fbFriends);
+                    friendListRecyclerView.setAdapter(friendListItemAdapter);
                 }
-                friendListItemAdapter = new FriendListItemAdapter(fbFriends);
-                friendListRecyclerView.setAdapter(friendListItemAdapter);
-            }
-        });
+            });
 
-        graphRequestFriend.executeAsync();
+            graphRequestFriend.executeAsync();
+        }
+
+
 
         // Sample data for friend requests and people you may know
         List<String> friendRequests = Arrays.asList("John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David", "John", "Sara", "Michael", "Anna", "David");
