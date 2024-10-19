@@ -11,7 +11,7 @@
         android:layout_height="300dp">
 
         <ImageView
-            android:id="@+id/background_image"
+            android:id="@+id/profileBackgroundImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
@@ -42,6 +42,7 @@
     </FrameLayout>
 
     <TextView
+        android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -111,6 +112,7 @@
             android:src="@drawable/study_icon" />
 
         <TextView
+            android:id="@+id/educationTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -130,6 +132,7 @@
             android:src="@drawable/ic_live" />
 
         <TextView
+            android:id="@+id/locationTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -143,12 +146,14 @@
         android:layout_marginTop="6dp">
 
         <ImageView
+            android:id="@+id/homeTownImageView"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="48dp"
             android:src="@drawable/ic_from" />
 
         <TextView
+            android:id="@+id/homeTownTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -168,6 +173,7 @@
             android:src="@drawable/ic_relationship" />
 
         <TextView
+            android:id="@+id/relationshipStatusTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"

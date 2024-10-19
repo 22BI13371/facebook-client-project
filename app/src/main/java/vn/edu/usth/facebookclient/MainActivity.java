@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     private LoginButton loginButton;
     private final Activity context = this;
-    private final List<String> PERMS = Arrays.asList("email", "user_gender", "user_age_range", "user_friends");
+    private final List<String> PERMS = Arrays.asList("email", "user_gender", "user_age_range", "user_friends", "user_hometown", "user_location");
     private Button homePageButton;
 
     @Override
