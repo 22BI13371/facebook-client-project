@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.circularimageview)
     implementation(libs.cardview)
     implementation(libs.volley)
     implementation(libs.picasso)
