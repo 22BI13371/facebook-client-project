@@ -118,5 +118,9 @@
     <string name="cmt_count">12k</string>
     <string name="my_friends">My Friends</string>
     <string name="friend_requests">Friend Requests</string>
+    <string name="Video">Video</string>
+    <string name="video_title">Video Title</string>
+    <string name="textview">TextView</string>
+    <string name="video_image">Video_image</string>
 
 </resources>

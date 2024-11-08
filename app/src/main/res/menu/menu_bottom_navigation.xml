@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/menu_home_page" android:title="@string/homepage" android:icon = "@drawable/home"/>
+    <item android:id = "@+id/friend_list_button" android:title="@string/friend_list" android:icon = "@drawable/friends"/>
+    <item android:id = "@+id/add_post_button" android:title="@string/video" android:icon = "@drawable/more"/>
+    <item android:id = "@+id/notification_button" android:title="@string/notification" android:icon = "@drawable/noti"/>
+    <item android:id = "@+id/profile_button" android:title="@string/profile" android:icon = "@drawable/user__1_"/>
+</menu>

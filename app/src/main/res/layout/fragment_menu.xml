@@ -9,7 +9,6 @@
 
     <!-- Menu header -->
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,11 +16,12 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/video_button"
             android:layout_marginVertical="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/Teal"
-            android:text="@string/settings"
+            android:text="@string/Video"
             android:textSize="32sp"
             android:drawableLeft="@android:drawable/ic_menu_edit"
             android:gravity="center"
