@@ -83,6 +83,7 @@ public class MyProfile extends Fragment {
         profileLocationTextView = view.findViewById(R.id.locationTextView);
         profileHometOwnTextView = view.findViewById(R.id.homeTownTextView);
 
+        // Get data from graph api
         if (AccessToken.getCurrentAccessToken() != null) {
             GraphRequest graphRequest = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
                 @Override
@@ -91,18 +92,18 @@ public class MyProfile extends Fragment {
                         assert jsonObject != null;
                         String name = jsonObject.getString("name");
                         String id  = jsonObject.getString("id");
-                        String location = jsonObject.getJSONObject("location").getString("name");
+//                        String location = jsonObject.getJSONObject("location").getString("name");
                         String homeTown = jsonObject.getJSONObject("hometown").getString("name");
 
 //                        Picasso.get().load("htt[://graph.facebook.com/" + id + "/picture?type=large").into(profilePicImageView);
 //                        Picasso.get().load("htt[://graph.facebook.com/" + id + "/picture?type=cover").into(profileBackgroundPicImageView);
                         profileNameTextView.setText(name);
-                        profileLocationTextView.setText(location);
+//                        profileLocationTextView.setText(location);
                         profileHometOwnTextView.setText(homeTown);
 
                         Log.d("profile graph request", jsonObject.toString());
                     } catch (JSONException e) {
-                        throw new RuntimeException(e);
+                        throw new RuntimeException(e); // handle no value case (ternary operator)
                     }
                 }
             });

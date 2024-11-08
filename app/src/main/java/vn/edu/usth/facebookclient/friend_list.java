@@ -95,6 +95,7 @@ public class friend_list extends Fragment {
             }
         });
 
+        // Get data from graph api
         if (AccessToken.getCurrentAccessToken() != null) {
             GraphRequest graphRequestFriend = GraphRequest.newMyFriendsRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONArrayCallback() {
                 @Override
